@@ -44,6 +44,17 @@
     <meta name="twitter:title" content="Direct Care Pediatrics">
     <meta name="twitter:description" content="Direct Primary Care in Utah">
     <meta name="twitter:image" content="img\thumbnail.JPG">
+
+    <!-- Other meta tags, CSS files, or external scripts -->
+    <script>
+        function redirectToNewPatientVisitLink() {
+            // Specify the URL you want to redirect to
+            var redirectUrl = "https://directcare.hint.com/signup/new-patient-visit";
+
+            // Open the URL in a new tab
+            window.open(redirectUrl, "_blank");
+        }
+    </script>
 </head>
 
 <body>
@@ -60,7 +71,11 @@
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
             <a href="index.html" class="navbar-brand">
-                <h1 class="m-0 text-primary"><i class="fa fa-plus-square me-3"></i>Direct Care Pediatrics</h1>
+                <img src="img/logo.jpg" alt="logo" class="brand-image">
+                <!--
+                <h1 class="m-0 text-primary"><i class="fa fa-plus-square me-3"></i>Direct Care</h1>
+                <h4 class="m-0 text-primary"></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pediatrics & Adults</h4>
+                -->
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -86,7 +101,7 @@
                     <-->
                     <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                 </div>
-                <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Patient Portal<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="https://directcare.hint.com/login/request" target="_blank" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Patient Portal<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </nav>
         <!-- Navbar End -->
@@ -97,12 +112,12 @@
             <div class="owl-carousel header-carousel position-relative">
                 <div class="owl-carousel-item position-relative">
                     <img class="img-fluid" src="img/carousel-1.jpg" alt="">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                    <div class="position-absolute top-0 start-0 w-100 h-50 d-flex align-items-center" style="background: rgba(0, 0, 0, 0);">
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-10 col-lg-8">
                                     <h1 class="display-2 text-white animated slideInDown mb-4">Nurturing Smiles</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Exceptional Pediatric Care Direct to You</p>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Exceptional Pediatric & Adult Primary Care Direct to You</p>
                                     <a href="about.html" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Schedule a Visit</a>
                                     <!--
                                     <a href="#section-to-skip-to" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Mission</a>
@@ -118,8 +133,8 @@
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-10 col-lg-8">
-                                    <h1 class="display-2 text-white animated slideInDown mb-4">Pediatrics Redefined</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Caring Beyond Clinics. Innovative Pediatrics: Direct, Compassionate, and Personal.</p>
+                                    <h5 class="display-2 text-white animated slideInDown mb-4">Pediatrics & Adults</h5>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Innovative Medicine: Direct, Integrated, and Personal for the Whole Family.</p>
                                     <a href="about.html" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
                                     <!--
                                     <a href="#section-to-skip-to" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Mission</a>
@@ -139,7 +154,7 @@
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Clinic & Home Visits</h1>
-                    <p>Where Care Comes to You: We're Always Here for Your Child.</p>
+                    <p>Where Care Comes to You: We're Always Here for Your Family.</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -150,8 +165,8 @@
                                 <span class="bg-primary"></span>
                             </div>
                             <div class="facility-text bg-primary">
-                                <h3 class="text-primary mb-3">After School Hours</h3>
-                                <p class="mb-0">Beyond the Bell: Expert Pediatric Care Available Late and After School Hours for Your Child's Well-Being.</p>
+                                <h3 class="text-primary mb-3">After School & Work Hours</h3>
+                                <p class="mb-0">Beyond the Bell: Expert Primary Care Available After School & Work Hours.</p>
                             </div>
                         </div>
                     </div>
@@ -164,7 +179,7 @@
                             </div>
                             <div class="facility-text bg-success">
                                 <h3 class="text-success mb-3">Urgent & Wound Care</h3>
-                                <p class="mb-0">Swift Healing, Anytime, Anywhere: From Urgent Care to Gentle Wound Care, Our Clinic Puts Your Child's Health First.</p>
+                                <p class="mb-0">Swift Healing: From Urgent Care to Gentle Wound Care, Our Clinic Puts Your Needs First.</p>
                             </div>
                         </div>
                     </div>
@@ -177,7 +192,7 @@
                             </div>
                             <div class="facility-text bg-warning">
                                 <h3 class="text-warning mb-3">Home & Virtual Visits</h3>
-                                <p class="mb-0">Connecting Care, Virtually and at Home: Convenient Access to Comprehensive Pediatric Wellness.</p>
+                                <p class="mb-0">Connecting Care: No Rush Direct Access to Your Providers. Bringing Back the Home Town Doctor.</p>
                             </div>
                         </div>
                     </div>
@@ -190,7 +205,7 @@
                             </div>
                             <div class="facility-text bg-info">
                                 <h3 class="text-info mb-3">Family-Centric Care</h3>
-                                <p class="mb-0">Accommodating Siblings Together for Doctor's Visits, Making Pediatric Care Seamless and Simple for Your Busy Growing Tribe.</p>
+                                <p class="mb-0">Accommodating Siblings & Families Together for Doctor's Visits, Making Care Simple for Your Growing Tribe. We See Grandparents Too!</p>
                             </div>
                         </div>
                     </div>
@@ -199,7 +214,7 @@
         </div>
         <!-- Facilities End -->
 
-        <!-- Call To Action Start -->
+        <!-- Membership Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="bg-light rounded">
@@ -213,22 +228,37 @@
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h1 class="mb-4">Become A Member</h1>
                                 <p class="mb-4">
-                                    Discover our transparent membership plans for pediatric care. A $100 registration fee per family is taken at sign-up.
-                                    <ul>
+                                    Discover our transparent membership plans for pediatric and adult primary care. A $100 registration fee per family is taken at sign-up.
+                                    <h4>Month-to-Month</h4>
+                                <ul>
+                                    <li>Ages 0 - 2: $170/month </li>
+                                    <li>Ages 2+: $85/month </li>
+                                    <li>Family Plan: $350/month* </li>
+                                </ul>
+                                    <br>
+                                    <h4>Annual Commitment</h4>
+                                <ul>
                                     <li>Ages 0 - 2: $150/month </li>
-                                    <li>Ages 3+: $75/month </li>
-                                    <li>Family Plan: $350/month </li>
-                                    </ul>
+                                    <li>Ages 2+: $75/month </li>
+                                    <li>Family Plan: $300/month* </li>
+                                </ul>
                                     While our clinic undergoes remodeling, we exclusively offer in-home visits, and all travel fees are waived for those who sign up for our membership within our service area. Enjoy quality pediatric care and the flexibility to cancel anytime.
+                                    <p>
+                                    <br>
+                                    The re-registration fee is $100 per person.
+                                    <br>
+                                    <br>
+                                    <small>*Family Plan consist of two adult caretakers and their minor dependents. Independent memberships are charged to any additional adult caretakers (i.e. grandparents), adult children >21, or adult children who are married.</small> 
+                                    </p>                             
                                 </p>
-                                <a class="btn btn-primary py-3 px-5" href="">Schedule a Visit<i class="fa fa-arrow-right ms-2"></i></a>
+                                <a class="btn btn-primary py-3 px-5" href="">Become a Member<i class="fa fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Call To Action End -->
+        <!-- Membership End -->
 
         <!-- About Start -->
         <section id="section-to-skip-to">
@@ -236,9 +266,9 @@
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="mb-4">Learn About Direct Pediatric Care</h1>
+                        <h1 class="mb-4">Learn About Direct Primary Care</h1>
                         <p>
-                        Direct pediatric care revolutionizes healthcare with a paradigm shift, cutting out middlemen and bureaucracies to eliminate barriers between medical providers and patients. This innovative model prioritizes the doctor-patient relationship, offering transparent and affordable rates. Families experience a personalized healthcare approach, focusing on the child's well-being. Quality over quantity is emphasized, allowing more time and attention per patient. Direct pediatric care not only changes healthcare economics but redefines medical practice, putting children's health and happiness at the forefront.</p>
+                        Direct primary care revolutionizes healthcare with a paradigm shift, cutting out middlemen and bureaucracies to eliminate barriers between medical providers and patients. This innovative model prioritizes the doctor-patient relationship, offering transparent and affordable rates. Families experience a personalized healthcare approach, focusing on the patient's well-being. Quality over quantity is emphasized, allowing more time and attention per patient. Direct primary care not only changes healthcare economics but redefines medical practice, putting patient's health and happiness at the forefront.</p>
                         <div class="row g-4 align-items-center">
                             <div class="col-sm-6">
                                 <!--
@@ -282,7 +312,7 @@
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Non-Member Fees</h1>
-                    For non-members, enjoy on-demand pediatric care at $270 per child per doctor's visit without a subscription commitment. We charge a $30 travel fee for home visits within our service area. We are currently waiving the travel fee if you sign up for our membership while our clinic is under renovations. Discounts are available to uninsured, healthshares, high-deductible plan holders, and financially needy. We give every returning patient a $50 discount.</p>
+                    For non-members, enjoy on-demand primary care at $300 per patient per doctor's visit without a subscription commitment. We charge a $30 travel fee for home visits within our service area. We are currently waiving the travel fee if you sign up for our membership while our clinic is under renovations. Discounts are available to uninsured, healthshares, high-deductible plan holders, and financially needy.</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -311,21 +341,21 @@
                                     </div>
                                     <div class="col-4">
                                         <div class="border-top border-3 border-success pt-2">
-                                            <h6 class="text-success mb-1">Time:</h6>
-                                            <small>30 Minutes</small>
+                                            <h6 class="text-success mb-1">Description:</h6>
+                                            <small>No Medical <br> Advice</small>
                                         </div>
                                     </div>
                                     <div class="col-4">
                                         <div class="border-top border-3 border-warning pt-2">
-                                            <h6 class="text-warning mb-1">Description:</h6>
-                                            <small>No Medical Advice <br><br></small>
+                                            <h6 class="text-warning mb-1">Time:</h6>
+                                            <small>30 Mins <br><br></small>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" onclick="redirectToNewPatientVisitLink()">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
                                 <img class="img-fluid rounded-circle" src="img/classes-2.jpg" alt="">
@@ -337,10 +367,10 @@
                                         <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
                                         <div class="ms-3">
                                             <h6 class="text-primary mb-1">Home or Office Visit</h6>
-                                            <small>Fee for Service Cost</small>
+                                            <small>Non-Member Cost</small>
                                         </div>
                                     </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$270</span>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$300</span>
                                 </div>
                                 <div class="row g-1">
                                     <div class="col-4">
@@ -351,14 +381,14 @@
                                     </div>
                                     <div class="col-4">
                                         <div class="border-top border-3 border-success pt-2">
-                                            <h6 class="text-success mb-1">Time:</h6>
-                                            <small>60 mins</small>
+                                            <h6 class="text-success mb-1">Description:</h6>
+                                            <small>Medical History, Concerns</small>
                                         </div>
                                     </div>
                                     <div class="col-4">
                                         <div class="border-top border-3 border-warning pt-2">
-                                            <h6 class="text-warning mb-1">Description</h6>
-                                            <small>Medical History & Concerns</small>
+                                            <h6 class="text-warning mb-1">Separate Cost:</h6>
+                                            <small>Labs, Imaging, Procedures</small>
                                         </div>
                                     </div>
                                 </div>
@@ -371,16 +401,16 @@
                                 <img class="img-fluid rounded-circle" src="img/classes-3.jpg" alt="">
                             </div>
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Established Patient Visit</a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="">Returning Patient Visit</a>
                                 <div class="d-flex align-items-center justify-content-between mb-4">
                                     <div class="d-flex align-items-center">
                                         <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
                                         <div class="ms-3">
                                             <h6 class="text-primary mb-1">Home or Office Visit</h6>
-                                            <small>Fee for Service Cost</small>
+                                            <small>Non-Member Cost</small>
                                         </div>
                                     </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$220</span>
+                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$270</span>
                                 </div>
                                 <div class="row g-1">
                                     <div class="col-4">
@@ -391,14 +421,14 @@
                                     </div>
                                     <div class="col-4">
                                         <div class="border-top border-3 border-success pt-2">
-                                            <h6 class="text-success mb-1">Time</h6>
-                                            <small>60 mins</small>
+                                            <h6 class="text-success mb-1">Description:</h6>
+                                            <small>Returning Patient Discount</small>
                                         </div>
                                     </div>
                                     <div class="col-4">
                                         <div class="border-top border-3 border-warning pt-2">
-                                            <h6 class="text-warning mb-1">Description:</h6>
-                                            <small>Returning Patient Discount</small>
+                                            <h6 class="text-warning mb-1">Separate Cost:</h6>
+                                            <small>Labs, Imaging, Procedures</small>
                                         </div>
                                     </div>
                                 </div>
@@ -530,7 +560,7 @@
                 </div>
             </div>
         </div>
-        <!-- Classes End -->
+        <!-- Services End -->
 
 
         <!-- Appointment Start -->
@@ -655,8 +685,8 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">What Parents Say about Direct Care!</h1>
-                    <p>Parents value direct primary care for its personalized, convenient approach to children's health.</p>
+                    <h1 class="mb-3">What Families Say about Direct Care!</h1>
+                    <p>Patients value direct primary care for its personalized, convenient approach to primary care.</p>
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div class="testimonial-item bg-light rounded p-5">
@@ -705,7 +735,7 @@
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Get In Touch</h3>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Sandy, Utah, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:+13854167103"></a>+1-385-416-7103 </a> (Text Friendly)</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:+13854167103"> +1-385-416-7103 </a> (Text Friendly)</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:info@directcarepediatrics.com" target="_blank">info@directcarepediatrics.com</a>
                         </p>
                         <div class="d-flex pt-2">

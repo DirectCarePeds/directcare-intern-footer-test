@@ -1,7 +1,8 @@
 /********** Template CSS **********/
 :root {
-    --primary: #3e687e;
-    --light: #103741;
+    /*Old Color Orange #fe5d37*/
+    --primary: #fe0840;
+    --light: #fff5f3;
     --dark: #103741;
 }
 
@@ -96,13 +97,31 @@ h6,
     font-family: 'Lobster Two', cursive;
 }
 
+/*** Navbar Logo Image ***/
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.brand-image {
+    width: 273px/* width of your h1 element */;
+    height: 96px /* height of your h1 element */;
+    margin-right: 0px; /* Adjust the margin as needed */
+    margin-left: -40px;
+}
 
 /*** Navbar ***/
+.navbar .navbar-nav .nav-link,
+.navbar .btn {
+    font-size: 19px; /* Adjust the font size as needed */
+}
+
 .navbar .navbar-nav .nav-link {
     padding: 30px 15px;
     color: var(--dark);
-    font-weight: 500;
+    font-weight: 600;
     outline: none;
+    font-size: 20px; /* Adjust the font size as needed */
 }
 
 .navbar .navbar-nav .nav-link:hover,
