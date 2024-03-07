@@ -58,7 +58,16 @@
     <script>
         function redirectToReturnPatientVisitLink() {
             // Specify the URL you want to redirect to
-            var redirectUrl = "https://directcare.hint.com/signup/new-patient-visit";
+            var redirectUrl = "https://directcare.hint.com/signup/return-patient-visit";
+
+            // Open the URL in a new tab
+            window.open(redirectUrl, "_blank");
+        }
+    </script>
+    <script>
+        function redirectToMeetGreetScheduler() {
+            // Specify the URL you want to redirect to
+            var redirectUrl = "https://schedule.nylas.com/direct-care-meet-greet";
 
             // Open the URL in a new tab
             window.open(redirectUrl, "_blank");
@@ -283,7 +292,7 @@
                                 <!--
                                 <a class="btn btn-primary rounded-pill py-3 px-5" href="">Learn More</a>
                                 -->
-                                <a class="btn btn-primary rounded-pill py-sm-3 px-sm-5 animated slideInRight">Free Meet & Greet</a>
+                                <a class="btn btn-primary rounded-pill py-sm-3 px-sm-5 animated slideInRight" onclick="redirectToMeetGreetScheduler()">Free Meet & Greet</a>
                             </div>
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center">
@@ -324,7 +333,7 @@
                     For non-members, enjoy on-demand primary care at $300 per patient per doctor's visit without a subscription commitment. We charge a $30 travel fee for home visits within our service area. We are currently waiving the travel fee if you sign up for our membership while our clinic is under renovations. Discounts are available to uninsured, healthshares, high-deductible plan holders, and financially needy.</p>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" onclick="redirectToMeetGreetScheduler()">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
                                 <img class="img-fluid rounded-circle" src="img/classes-1.jpg" alt="">
@@ -404,7 +413,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" onclick="redirectToReturnPatientVisitLink()">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
                                 <img class="img-fluid rounded-circle" src="img/classes-3.jpg" alt="">

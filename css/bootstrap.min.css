@@ -207,6 +207,7 @@
     text-decoration: none;
   }
   a:hover {
+    /* Old Orange Color: #cb4a2c*/
     color: #cb4a2c;
   }
   a:not([href]):not([class]),
@@ -2553,15 +2554,16 @@
     border-color: #fe0840;
   }
   .btn-primary:hover {
+    /* Old Orange Color fe7555, fe6d4b */
     color: #000;
-    background-color: #fe7555;
-    border-color: #fe6d4b;
+    background-color:  #084efe;
+    border-color:  #084efe;
   }
   .btn-check:focus + .btn-primary,
   .btn-primary:focus {
     color: #000;
-    background-color: #fe7555;
-    border-color: #fe6d4b;
+    background-color:  #084efe;
+    border-color:  #084efe;
     box-shadow: 0 0 0 0.25rem rgba(216, 79, 47, 0.5);
   }
   .btn-check:checked + .btn-primary,
@@ -2570,8 +2572,8 @@
   .btn-primary.active,
   .show > .btn-primary.dropdown-toggle {
     color: #000;
-    background-color: #fe7d5f;
-    border-color: #fe6d4b;
+    background-color:  #084efe;
+    border-color:  #084efe;
   }
   .btn-check:checked + .btn-primary:focus,
   .btn-check:active + .btn-primary:focus,
