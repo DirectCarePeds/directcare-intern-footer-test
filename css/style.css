@@ -448,6 +448,53 @@ h6,
     background: var(--dark);
 }
 
+ /* Membership Box */
+ .membership-box {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.membership-box h1 {
+    margin-bottom: 20px;
+}
+
+.membership-box p {
+    margin-bottom: 20px;
+}
+
+.membership-box ul {
+    margin-bottom: 20px;
+}
+
+/* Center buttons */
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 767px) {
+    .membership-box {
+        padding: 15px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+/* Jump animation on hover over "What's Included" */
+.grid-cell {
+    transition: transform 0.3s;
+}
+
+.grid-cell:hover {
+    transform: translateY(-10px);
+}
+
 
 /*** Footer ***/
 .footer .btn.btn-social {
