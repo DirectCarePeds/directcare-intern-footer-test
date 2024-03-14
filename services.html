@@ -47,6 +47,35 @@
     <meta name="twitter:title" content="Direct Care Pediatrics">
     <meta name="twitter:description" content="Direct Primary Care in Utah">
     <meta name="twitter:image" content="img\thumbnail.JPG">
+
+    <!-- Other meta tags, CSS files, or external scripts -->
+    <script>
+        function redirectToNewPatientVisitLink() {
+            // Specify the URL you want to redirect to
+            var redirectUrl = "https://directcare.hint.com/signup/new-patient-visit";
+
+            // Open the URL in a new tab
+            window.open(redirectUrl, "_blank");
+        }
+    </script>
+    <script>
+        function redirectToReturnPatientVisitLink() {
+            // Specify the URL you want to redirect to
+            var redirectUrl = "https://directcare.hint.com/signup/return-patient-visit";
+
+            // Open the URL in a new tab
+            window.open(redirectUrl, "_blank");
+        }
+    </script>
+    <script>
+        function redirectToMeetGreetScheduler() {
+            // Specify the URL you want to redirect to
+            var redirectUrl = "https://schedule.nylas.com/direct-care-meet-and-greet";
+
+            // Open the URL in a new tab
+            window.open(redirectUrl, "_blank");
+        }
+    </script>
 </head>
 
 <body>
@@ -120,7 +149,7 @@
         <div class="container mt-5 wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1s">
             <div class="row">
                 <div class="col text-center">
-                    <h1>What's included?</h1>
+                    <h1>What Services are included?</h1>
                     <br>
                 </div>
             </div>
@@ -192,7 +221,7 @@
                             <p><small>*If the plan is ever canceled or payment is lapsed, the re-registration fee is $100 per person.</small></p>
                             <p><small>**Family Plan consists of two adult caretakers and their minor dependents. Independent memberships are charged to any additional adult caretakers (i.e. grandparents), adult children >21, or adult children who are married.</small></p>
                             <div class="btn-center">
-                                <a class="btn btn-primary py-3 px-5" href=""><h4  style="color: white;">Join Now<br>Month-to-Month</h4></a>
+                                <a class="btn btn-primary py-3 px-5" href="https://directcare.hint.com/signup/month-to-month-plan" target="_blank"><h4  style="color: white;">Join Now<br>Month-to-Month</h4></a>
                             </div>
                         </div>
                     </div>
@@ -210,7 +239,7 @@
                             <p><small>*If the plan is ever canceled or payment is lapsed, the re-registration fee is $100 per person.</small></p>
                             <p><small>**Family Plan consists of two adult caretakers and their minor dependents. Independent memberships are charged to any additional adult caretakers (i.e. grandparents), adult children >21, or adult children who are married.</small></p>
                             <div class="btn-center">
-                                <a class="btn btn-primary py-3 px-5 text-white" href=""><h4 style="color: white;">Join Now<br>Annual Commitment</h4></a>
+                                <a class="btn btn-primary py-3 px-5 text-white" href="https://directcare.hint.com/signup/annual-commitment-plan" target="_blank"><h4 style="color: white;">Join Now<br>Annual Commitment</h4></a>
                             </div>
                         </div>
                     </div>
@@ -222,7 +251,7 @@
         <div class="container mt-5 wow animate__animated animate__fadeInRight" data-wow-delay="0.5s" data-wow-duration="1s">
             <div class="row">
                 <div class="col text-center">
-                    <h3>What's not included?</h3>
+                    <h3>What services not included?</h3>
                     <br>
                 </div>
             </div>
@@ -255,11 +284,11 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Non-Member Services</h1>
+                    <h1 class="mb-3">Non-Member Fees</h1>
                     For non-members, enjoy on-demand primary care at $300 per patient per doctor's visit without a subscription commitment. We charge a $30 travel fee for home visits within our service area. We are currently waiving the travel fee if you sign up for our membership while our clinic is under renovations. Discounts are available to uninsured, healthshares, high-deductible plan holders, and financially needy.</p>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" onclick="redirectToMeetGreetScheduler()">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
                                 <img class="img-fluid rounded-circle" src="img/classes-1.jpg" alt="">
@@ -299,7 +328,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" onclick="redirectToNewPatientVisitLink()">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
                                 <img class="img-fluid rounded-circle" src="img/classes-2.jpg" alt="">
@@ -339,7 +368,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" onclick="redirectToReturnPatientVisitLink()">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
                                 <img class="img-fluid rounded-circle" src="img/classes-3.jpg" alt="">
@@ -379,132 +408,10 @@
                             </div>
                         </div>
                     </div>
-                    <!--
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-4.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Urgent Care</a>
-                                <div class="d-flex align-items-center justify-content-between mb-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
-                                        <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Pediatrician Visit</h6>
-                                            <small>Fee for Service Cost</small>
-                                        </div>
-                                    </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$200</span>
-                                </div>
-                                <div class="row g-1">
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-primary pt-2">
-                                            <h6 class="text-primary mb-1">Age:</h6>
-                                            <small>0-26 Years</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-success pt-2">
-                                            <h6 class="text-success mb-1">Time:</h6>
-                                            <small>60 Minutes</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-warning pt-2">
-                                            <h6 class="text-warning mb-1">Description:</h6>
-                                            <small>Urgent or Sick Care</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-5.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Physicals</a>
-                                <div class="d-flex align-items-center justify-content-between mb-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
-                                        <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Pediatrician Visit</h6>
-                                            <small>Fee for Service Cost</small>
-                                        </div>
-                                    </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$220</span>
-                                </div>
-                                <div class="row g-1">
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-primary pt-2">
-                                            <h6 class="text-primary mb-1">Age:</h6>
-                                            <small>0-21 Years</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-success pt-2">
-                                            <h6 class="text-success mb-1">Time:</h6>
-                                            <small>60 Minutes</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-warning pt-2">
-                                            <h6 class="text-warning mb-1">Description:</h6>
-                                            <small>School, Work, Sports, Travel, Missionary, etc.</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-6.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Lab Tests</a>
-                                <div class="d-flex align-items-center justify-content-between mb-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
-                                        <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Additional Costs</h6>
-                                            <small>Fee per Lab Cost</small>
-                                        </div>
-                                    </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$25</span>
-                                </div>
-                                <div class="row g-1">
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-primary pt-2">
-                                            <h6 class="text-primary mb-1">Age:</h6>
-                                            <small>0-26 Years</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-success pt-2">
-                                            <h6 class="text-success mb-1">Results In:</h6>
-                                            <small>15 Minutes</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-warning pt-2">
-                                            <h6 class="text-warning mb-1">Description:</h6>
-                                            <small>Strep, Covid, Flu, RSV, UTI, Mono, Pinkeye, etc.</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    -->
                 </div>
             </div>
         </div>
-        <!-- Services End -->
+        <!-- Non-Member Services End -->
 
 
         <!-- Appointment Start -->
@@ -622,10 +529,8 @@
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Get In Touch</h3>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Sandy, Utah, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:+13854167103" target="_blank">+1-385-416-7103</a>
- (Text Friendly)</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:info@directcarepediatrics.com" target="_blank">info@directcarepediatrics.com</a>
-</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:+13854167103" target="_blank">+1-385-416-7103</a>(Text Friendly)</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:info@directcarepediatrics.com" target="_blank">info@directcarepediatrics.com</a></p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>

@@ -208,7 +208,7 @@
   }
   a:hover {
     /* Old Orange Color: #cb4a2c*/
-    color: #cb4a2c;
+    color: #ff7f50;
   }
   a:not([href]):not([class]),
   a:not([href]):not([class]):hover {
