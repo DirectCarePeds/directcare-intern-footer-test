@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Kider - Preschool Website Template</title>
+    <title>Pediatrics Practice in Sandy, Utah</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -44,6 +44,53 @@
     <meta name="twitter:title" content="Direct Care Pediatrics">
     <meta name="twitter:description" content="Direct Primary Care in Utah">
     <meta name="twitter:image" content="img\thumbnail.JPG">
+
+     <!-- Other meta tags, CSS files, or external scripts -->
+     <script>
+        function redirectToNewPatientVisitLink() {
+            // Specify the URL you want to redirect to
+            var redirectUrl = "https://directcare.hint.com/signup/new-patient-visit";
+
+            // Open the URL in a new tab
+            window.open(redirectUrl, "_blank");
+        }
+    </script>
+    <script>
+        function redirectToReturnPatientVisitLink() {
+            // Specify the URL you want to redirect to
+            var redirectUrl = "https://directcare.hint.com/signup/return-patient-visit";
+
+            // Open the URL in a new tab
+            window.open(redirectUrl, "_blank");
+        }
+    </script>
+    <script>
+        function redirectToMeetGreetScheduler() {
+            // Specify the URL you want to redirect to
+            var redirectUrl = "https://schedule.nylas.com/direct-care-meet-and-greet";
+
+            // Open the URL in a new tab
+            window.open(redirectUrl, "_blank");
+        }
+    </script>
+    <script>
+        function redirectToAnnualMembershipSignUp() {
+            // Specify the URL you want to redirect to
+            var redirectUrl = "https://directcare.hint.com/signup/annual-commitment-plan";
+
+            // Open the URL in a new tab
+            window.open(redirectUrl, "_blank");
+        }
+    </script>
+    <script>
+        function redirectToMonthlySignUp() {
+            // Specify the URL you want to redirect to
+            var redirectUrl = "https://directcare.hint.com/signup/month-to-month-plan";
+
+            // Open the URL in a new tab
+            window.open(redirectUrl, "_blank");
+        }
+    </script>
 </head>
 
 <body>
@@ -60,7 +107,11 @@
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
             <a href="index.html" class="navbar-brand">
-                <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>Kider</h1>
+                <img src="img/logo.jpg" alt="logo" class="brand-image">
+                <!--
+                <h1 class="m-0 text-primary"><i class="fa fa-plus-square me-3"></i>Direct Care</h1>
+                <h4 class="m-0 text-primary"></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pediatrics & Adults</h4>
+                -->
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -68,22 +119,25 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About Us</a>
-                    <a href="classes.html" class="nav-item nav-link">Classes</a>
+                    <a href="about.html" class="nav-item nav-link active">About Us</a>
+                    <a href="services.html" class="nav-item nav-link">Services</a>
+                    <!---- Comment Out Drop Down>
+                    <a href="appointment.html" class="nav-item nav-link">Make Appointment</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                            <a href="facility.html" class="dropdown-item active">School Facilities</a>
-                            <a href="team.html" class="dropdown-item">Popular Teachers</a>
-                            <a href="call-to-action.html" class="dropdown-item">Become A Teachers</a>
+                            <a href="signup.html" class="dropdown-item">Facilities</a>
+                            <a href="team.html" class="dropdown-item">Doctors</a>
+                            <a href="call-to-action.html" class="dropdown-item">Prices</a>
                             <a href="appointment.html" class="dropdown-item">Make Appointment</a>
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                             <a href="404.html" class="dropdown-item">404 Error</a>
                         </div>
                     </div>
+                    <-->
                     <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                 </div>
-                <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
+                <a  href="signup.html" target="_blank" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Sign Up Now<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </nav>
         <!-- Navbar End -->
@@ -92,12 +146,12 @@
         <!-- Page Header End -->
         <div class="container-xxl py-5 page-header position-relative mb-5">
             <div class="container py-5">
-                <h1 class="display-2 text-white animated slideInDown mb-4">Facilities</h1>
+                <h1 class="display-2 text-white animated slideInDown mb-4">Sign Up Now</h1>
                 <nav aria-label="breadcrumb animated slideInDown">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">Facilities</li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Sign Up Now</li>
                     </ol>
                 </nav>
             </div>
@@ -109,59 +163,39 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">School Facilities</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                    <h1><i class="fa fa-star" aria-hidden="true"></i> Sign Up Now <i class="fa fa-star" aria-hidden="true"></i></h1>
+                    <p>For detailed info about each plan see <a href="services.html">services page.</a></p>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s" onclick="redirectToAnnualMembershipSignUp()">
                         <div class="facility-item">
-                            <div class="facility-icon bg-primary">
-                                <span class="bg-primary"></span>
-                                <i class="fa fa-bus-alt fa-3x text-primary"></i>
-                                <span class="bg-primary"></span>
-                            </div>
                             <div class="facility-text bg-primary">
-                                <h3 class="text-primary mb-3">School Bus</h3>
-                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                                <h3 class="text-primary mb-3">Annual Commitment</h3>
+                                <p class="mb-0"><h2>$75/month</h2></p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    </div>                
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s" onclick="redirectToMonthlySignUp()">
                         <div class="facility-item">
-                            <div class="facility-icon bg-success">
-                                <span class="bg-success"></span>
-                                <i class="fa fa-futbol fa-3x text-success"></i>
-                                <span class="bg-success"></span>
-                            </div>
                             <div class="facility-text bg-success">
-                                <h3 class="text-success mb-3">Playground</h3>
-                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                                <h3 class="text-success mb-3">Month-to-Month Membership</h3>
+                                <p class="mb-0"><h2>$85/month</h2></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s" onclick="redirectToNewPatientVisitLink()">
                         <div class="facility-item">
-                            <div class="facility-icon bg-warning">
-                                <span class="bg-warning"></span>
-                                <i class="fa fa-home fa-3x text-warning"></i>
-                                <span class="bg-warning"></span>
-                            </div>
                             <div class="facility-text bg-warning">
-                                <h3 class="text-warning mb-3">Healthy Canteen</h3>
-                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                                <h3 class="text-warning mb-3">One-Time New Patient</h3>
+                                <p class="mb-0"><h2>$300</h2></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s" onclick="redirectToReturnPatientVisitLink()">
                         <div class="facility-item">
-                            <div class="facility-icon bg-info">
-                                <span class="bg-info"></span>
-                                <i class="fa fa-chalkboard-teacher fa-3x text-info"></i>
-                                <span class="bg-info"></span>
-                            </div>
                             <div class="facility-text bg-info">
-                                <h3 class="text-info mb-3">Positive Learning</h3>
-                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                                <h3 class="text-info mb-3">One-Time Returning Patient</h3>
+                                <p class="mb-0"><h2>$270</h2></p>
                             </div>
                         </div>
                     </div>
@@ -177,9 +211,10 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Get In Touch</h3>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Sandy, Utah, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:+13854167103">+1-385-463-2757 </a>(Text Friendly)<br></p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:info@directcarepediatrics.com" target="_blank">info@directcarepediatrics.com</a>
+</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -195,7 +230,7 @@
                         <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
                         <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <!--<div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Photo Gallery</h3>
                         <div class="row g-2 pt-2">
                             <div class="col-4">
@@ -217,13 +252,13 @@
                                 <img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt="">
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Newsletter</h3>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <h3 class="text-white mb-4">Mailing List</h3>
+                        <p><a href="https://forms.gle/2z9FfSGfUHDZUQGw5" target="_">Sign up for our mailing list</a> to stay up-to-date on when we launch the practice.</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            <!-- <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"> 
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"><a href="https://forms.gle/2z9FfSGfUHDZUQGw5" target="_">SignUp for Mailing List</a></button> -->
                         </div>
                     </div>
                 </div>
@@ -232,17 +267,17 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
+                            &copy; <a class="border-bottom" href="#">2024 Direct Care Pediatrics</a>, All Right Reserved. 
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+							Designed By <a class="border-bottom" href="https://htmlcodex.com" target="_blank">HTML Codex</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
                                 <a href="">Home</a>
                                 <a href="">Cookies</a>
                                 <a href="">Help</a>
-                                <a href="">FQAs</a>
+                                <a href="">FAQs</a>
                             </div>
                         </div>
                     </div>
