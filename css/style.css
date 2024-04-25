@@ -475,6 +475,11 @@ h6,
     justify-content: center;
 }
 
+/* Fixed width for buttons */
+.btn-center > button {
+    width: 150px;
+}
+
 /* Adjustments for mobile devices */
 @media (max-width: 767px) {
     .membership-box {
