@@ -353,6 +353,13 @@ h6,
     align-items: center;
 }
 
+.membercell-mobile.border {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid black;
+    padding-bottom: 2px;
+}
+
 .membercolumn {
     max-width: 300px;
     flex-grow: 1;
