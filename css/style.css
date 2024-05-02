@@ -271,24 +271,43 @@ h6,
 }
 
 /*** Member Pricing Chart ***/
-.membergrid {
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .membergrid-desktop {
+        display: none !important; /* Hide desktop grid on mobile */
+    }
+
+    .membergrid-mobile {
+        display: block !important; /* Show mobile grid on mobile */
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .membergrid-desktop {
+        display: block !important; /* Show desktop grid on desktop */
+    }
+
+    .membergrid-mobile {
+        display: none !important; /* Hide mobile grid on desktop */
+    }
+}
+
+.membergrid-desktop {
     display: grid;
     grid-gap: 0px; /* spacing between rows */
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .memberrow {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 columns */
     overflow: hidden; /* Prevents overflow of children outside the rounded corners */
     align-items: center; /* Aligns items vertically center */
     text-align: center; /* Centers text horizontally */
-}
-.memberrow > div:nth-child(2) {
-    border-left: 1px solid black; /* Add border to left of column 2 */
-    padding-left: 10px; /* Adjust padding for better alignment */
 }
 
 .membercell {
@@ -298,12 +317,14 @@ h6,
     justify-content: center;
     align-items: center;
 }
+
 .membercell.border {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: 1px solid black;
     padding-bottom: 2px;
 }
+
 .membercell.purple {
     background-color: rgba(172, 140, 235, 0.4); /* Adjusted opacity for clarity */
     padding: 5px;
@@ -312,33 +333,66 @@ h6,
     justify-content: center;
     align-items: center;
 }
+
 .small-img-redx {
     width: 24px;
     height: 24px;
 }
+
 .membercell.bold {
     color: black; /* Set text color to black */
     font-weight: bold; /* Make text bold */
 }
+
 .membercell.left {
     border-left: 1px solid black;
-
 }
+
 .membercell.right {
     border-right: 1px solid black;
 }
+
 .membercell.bottom {
     border-bottom: 1px solid black;
 }
+
 .membercell.top {
     border-top: 1px solid black;
 }
+
 .membercell.headborder {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-right: 1px solid black;
     border-top: 1px solid black;
     border-bottom: 0px solid black;
+}
+
+.membercell-mobile {
+    display: flex;
+    font-family: "Font Awesome 5 Free";
+    justify-content: center;
+    align-items: center;
+}
+
+.membercolumn {
+    max-width: 300px;
+    flex-grow: 1;
+    margin: 0 auto;
+}
+
+/* Define shake animation */
+@keyframes shakeAnimation {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+    100% { transform: translateX(0); }
+}
+
+/* Apply shake animation on hover */
+.membercell.headborder:hover .shake {
+    animation: shakeAnimation 0.4s ease-in-out;
 }
 
 

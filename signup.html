@@ -96,7 +96,7 @@
     </script>
 </head>
 
-<body>
+<body style="background-color: white;">
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -161,33 +161,33 @@
             <p>For more info about plans see <a href="services.html">member services page.</a></p>
         </div>
 
-        <!-- Member Pricing Table -->
-        <div class="membergrid">
+        <!-- Member Desktop Pricing Table -->
+        <div class="membergrid-desktop wow animate__animated animate__fadeIn">
             <!-- First Row -->
             <div class="memberrow">
                 <div class="membercell blank"></div> <!--Left Blank Intentionally-->
-                <div class="membercell headborder" style="background-color: #ffe7ec;">
+                <div class="membercell headborder" style="background-color: #ffe7ec; border-left: 1px solid black;">
                     <div>
                         <b style="color:black">Ages 0-1</b>
-                        <h3 style="padding-bottom: 0px; margin-bottom: -6px; color:#fe0840">$170</h3><small style="color:#fe0840">/month</small>
+                        <h3 class="shake" style="padding-bottom: 0px; margin-bottom: -6px; color:#fe0840">$170</h3><small style="color:#fe0840">/month</small>
                     </div>
                 </div>
                 <div class="membercell headborder" style="background-color: #e8f3ee;">
                     <div>
                         <b style="color:black">Ages 2+</b>
-                        <h3 style="padding-bottom: 0px; margin-bottom: -6px; color:#198754;">$85</h3><small style="color:#198754;">/month</small>
+                        <h3 class="shake" style="padding-bottom: 0px; margin-bottom: -6px; color:#198754;">$85</h3><small style="color:#198754;">/month</small>
                     </div>
                 </div>
                 <div class="membercell headborder" style="background-color: #fff9e7;">
                     <div>
                         <b style="color:black">Text Only</b>
-                        <h3 style="padding-bottom: 0px; margin-bottom: -6px; color: #ffc107;">$20</h3><small style="color: #ffc107;">/month</small>
+                        <h3 class="shake" style="padding-bottom: 0px; margin-bottom: -6px; color: #ffc107;">$20</h3><small style="color: #ffc107;">/month</small>
                     </div>
                 </div>
                 <div class="membercell headborder" style="background-color: #e7fafe;">
                     <div>
                         <b style="color:black">Non-Member</b>
-                        <h3 style="padding-bottom: 0px; margin-bottom: -6px; color: #0dcaf0;">$300</h3><small style="color: #0dcaf0;">/visit</small>
+                        <h3 class="shake" style="padding-bottom: 0px; margin-bottom: -6px; color: #0dcaf0;">$300</h3><small style="color: #0dcaf0;">/visit</small>
                     </div>
                 </div>
             </div>
@@ -201,7 +201,7 @@
                 <div class="membercell top right"><img src="img/redx.png" class="small-img-redx"></div>
             </div>
         
-            <!-- Row 3 to Row 8 following the same pattern -->
+            <!-- Row 3  -->
             <div class ="memberrow">
                 <div class="membercell purple bold left">Text Physician</div>
                 <div class="membercell purple"><img src="img/greencheck.png" class="small-img-redx"></div>
@@ -210,7 +210,7 @@
                 <div class="membercell purple right"><img src="img/redx.png" class="small-img-redx"></div>
             </div>
 
-            <!-- Row 3 -->
+            <!-- Row 4 -->
             <div class="memberrow">
                 <div class="membercell bold left">Virtual Visits</div>
                 <div class="membercell"><img src="img/greencheck.png" class="small-img-redx"></div>
@@ -219,16 +219,16 @@
                 <div class="membercell right"><img src="img/redx.png" class="small-img-redx"></div>
             </div>
 
-            <!-- Row 4 -->
+            <!-- Row 5 -->
             <div class="memberrow">
                 <div class="membercell purple bold left">Office Visits</div>
                 <div class="membercell purple"><img src="img/greencheck.png" class="small-img-redx"></div>
                 <div class="membercell purple"><img src="img/greencheck.png" class="small-img-redx"></div>
                 <div class="membercell purple">$175 / visit</div>
-                <div class="membercell purple right"><img src="img/redx.png" class="small-img-redx"></div>
+                <div class="membercell purple right">$300 / visit</div>
             </div>
 
-            <!-- Row 5 -->
+            <!-- Row 6 -->
             <div class="memberrow">
                 <div class="membercell bold left">Minor Procedures</div>
                 <div class="membercell"><img src="img/greencheck.png" class="small-img-redx"></div>
@@ -237,7 +237,7 @@
                 <div class="membercell right"><img src="img/redx.png" class="small-img-redx"></div>
             </div>
 
-            <!-- Row 6 -->
+            <!-- Row 7 -->
             <div class="memberrow">
                 <div class="membercell purple bold left bottom" style="border-bottom-left-radius: 10px;">Home Visits</div>
                 <div class="membercell purple bottom">$50 / visit</div>
@@ -246,13 +246,93 @@
                 <div class="membercell purple right bottom" style="border-bottom-right-radius: 10px;"><img src="img/redx.png" class="small-img-redx"></div>
             </div>
         </div>
-        
+        <!-- End Member Desktop Pricing Table -->
 
-        <!-- Emd Member Pricing Table -->
+        <!-- Member Mobile Pricing Table -->
+        <div class="membergrid-mobile wow animate__animated animate__fadeIn">
+            <!-- Column 1 Ages 0-1 -->
+            <div class="membercolumn">
+                <div class="membercell-mobile" style="background-color: #ffe7ec;">
+                    <div>
+                        <b style="color:black">Ages 0-1</b>
+                        <h3 class="shake" style="padding-bottom: 0px; margin-bottom: -6px; color:#fe0840">$170</h3><small style="color:#fe0840">/month</small>
+                    </div>
+                </div>
+                <div style="border: 1px solid black;">
+                    <div class="membercell-mobile">Registration Fee: $100 / family</div>
+                        <div class="membercell-mobile"><img src="img/greencheck.png" class="small-img-redx"> &nbsp;Text Physician</div>
+                        <div class="membercell-mobile"><img src="img/greencheck.png" class="small-img-redx"> &nbsp;Virtual Visits</div>
+                        <div class="membercell-mobile"><img src="img/greencheck.png" class="small-img-redx"> &nbsp;Minor Procedures</div>
+                        <div class="membercell-mobile" style="border-bottom-left-radius: 10px;"> Home Visits: $50 / visit</div>
+                        <div class="membercell-mobile" style="display: flex; justify-content: center;"> <!-- Center the button -->
+                            <a href="https://directcare.hint.com/signup/month-to-month-plan" target="_blank" class="btn btn-primary py-sm-2 px-sm-3 me-2 animated slideInLeft">Sign Up Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Column 2 Ages 2+ -->    
+            <div class="membercolumn">
+                <div class="membercell-mobile" style="background-color: #e8f3ee;">
+                    <div>
+                        <b style="color:black">Ages 2+</b>
+                        <h3 class="shake" style="padding-bottom: 0px; margin-bottom: -6px; color:#198754;">$85</h3><small style="color:#198754;">/month</small>
+                    </div>
+                </div>
+                <div style="border: 1px solid black;">
+                    <div class="membercell-mobile">Registration Fee: $100 / family</div>
+                        <div class="membercell-mobile"><img src="img/greencheck.png" class="small-img-redx"> &nbsp;Text Physician</div>
+                        <div class="membercell-mobile"><img src="img/greencheck.png" class="small-img-redx"> &nbsp;Virtual Visits</div>
+                        <div class="membercell-mobile"><img src="img/greencheck.png" class="small-img-redx"> &nbsp;Minor Procedures</div>
+                        <div class="membercell-mobile" style="border-bottom-left-radius: 10px;"> Home Visits: $50 / visit</div>
+                        <div class="membercell-mobile" style="text-align: center;"> <!-- Center the button -->
+                            <a href="https://directcare.hint.com/signup/month-to-month-plan" target="_blank" class="btn btn-primary py-sm-2 px-sm-3 me-2 animated slideInLeft">Sign Up Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Column 4 Text Only -->    
+            <div class="membercolumn">
+                <div style="border: 1px solid black;">
+                    <div class="membercell-mobile" style="background-color: #fff9e7;">
+                        <div>
+                            <b style="color:black">Text Only</b>
+                            <h3 class="shake" style="padding-bottom: 0px; margin-bottom: -6px; color: #ffc107;">$20</h3><small style="color: #ffc107;">/month</small>
+                        </div>
+                    </div>
+                    <div class="membercell-mobile">$20 / family</div>
+                    <div class="membercell-mobile"><img src="img/greencheck.png" class="small-img-redx"> &nbsp; Text Physician</div>
+                    <div class="membercell-mobile">$35 / visit</div>
+                    <div class="membercell-mobile">$175 / visit</div>
+                    <div class="membercell-mobile" style="text-align: center;"> <!-- Center the button -->
+                        <a href="https://directcare.hint.com/signup/month-to-month-plan" target="_blank" class="btn btn-primary py-sm-2 px-sm-3 me-2 animated slideInLeft">Sign Up Now</a>
+                    </div>
+                </div>
+            </div>
+            <br>
 
-        <br>
-        <br>
-
+            <!-- Column 5 Non-Member -->    
+            <div class="membercolumn">
+                <div style="border: 1px solid black;">    
+                    <div class="membercell-mobile" style="background-color: #e7fafe;">
+                        <div>
+                            <b style="color:black">Non-Member</b>
+                            <h3 class="shake" style="padding-bottom: 0px; margin-bottom: -6px; color: #0dcaf0;">$300</h3><small style="color: #0dcaf0;">/visit</small>
+                        </div>
+                    </div>
+                    <div class="membercell-mobile"><img src="img/redx.png" class="small-img-redx">Text Physician</div>
+                    <div class="membercell-mobile"><img src="img/redx.png" class="small-img-redx">Virtual Visits</div>
+                    <div class="membercell-mobile">$300 / Office Visit</div>
+                    <div class="membercell-mobile"><img src="img/redx.png" class="small-img-redx">Minor Procedures</div>
+                    <div class="membercell-mobile"><img src="img/redx.png" class="small-img-redx">Home Visits</div>
+                    <div class="membercell-mobile" style="text-align: center;"> <!-- Center the button -->
+                        <a href="https://directcare.hint.com/signup/month-to-month-plan" target="_blank" class="btn btn-primary py-sm-2 px-sm-3 me-2 animated slideInLeft">Sign Up Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Member Mobile Pricing Table -->
 
 
         <div class="row justify-content-center">
