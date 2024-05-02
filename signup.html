@@ -121,9 +121,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About Us</a>
-                    <a href="signup.html" class="nav-item nav-link active">Sign Up</a>
+                    <a href="signup.html" class="nav-item nav-link">Sign Up</a>
                     <!---- Comment Out Drop Down>
                     <a href="appointment.html" class="nav-item nav-link">Make Appointment</a>
                     <div class="nav-item dropdown">
@@ -140,7 +140,7 @@
                     <-->
                     <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                 </div>
-                <a  href="signup.html" target="_blank" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Sign Up Now<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="signup.html" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Sign Up Now<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </nav>
         <!-- Navbar End -->
@@ -155,12 +155,106 @@
         </div>
         <!-- Page Header End -->
 
-
         <!-- Sign Up Now Start -->
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <h1><i class="fa fa-star" aria-hidden="true"></i> Sign Up Now <i class="fa fa-star" aria-hidden="true"></i></h1>
             <p>For more info about plans see <a href="services.html">member services page.</a></p>
         </div>
+
+        <!-- Member Pricing Table -->
+        <div class="membergrid">
+            <!-- First Row -->
+            <div class="memberrow">
+                <div class="membercell blank"></div> <!--Left Blank Intentionally-->
+                <div class="membercell headborder" style="background-color: #ffe7ec;">
+                    <div>
+                        <b style="color:black">Ages 0-1</b>
+                        <h3 style="padding-bottom: 0px; margin-bottom: -6px; color:#fe0840">$170</h3><small style="color:#fe0840">/month</small>
+                    </div>
+                </div>
+                <div class="membercell headborder" style="background-color: #e8f3ee;">
+                    <div>
+                        <b style="color:black">Ages 2+</b>
+                        <h3 style="padding-bottom: 0px; margin-bottom: -6px; color:#198754;">$85</h3><small style="color:#198754;">/month</small>
+                    </div>
+                </div>
+                <div class="membercell headborder" style="background-color: #fff9e7;">
+                    <div>
+                        <b style="color:black">Text Only</b>
+                        <h3 style="padding-bottom: 0px; margin-bottom: -6px; color: #ffc107;">$20</h3><small style="color: #ffc107;">/month</small>
+                    </div>
+                </div>
+                <div class="membercell headborder" style="background-color: #e7fafe;">
+                    <div>
+                        <b style="color:black">Non-Member</b>
+                        <h3 style="padding-bottom: 0px; margin-bottom: -6px; color: #0dcaf0;">$300</h3><small style="color: #0dcaf0;">/visit</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="memberrow">
+                <div class="membercell bold" style="border-top-left-radius: 10px; border-top: 1px solid black; border-left: 1px solid black;">Registration Fee</div>
+                <div class="membercell top">$100 / family</div>
+                <div class="membercell top">$100 / family</div>
+                <div class="membercell top">$20 / family</div>
+                <div class="membercell top right"><img src="img/redx.png" class="small-img-redx"></div>
+            </div>
+        
+            <!-- Row 3 to Row 8 following the same pattern -->
+            <div class ="memberrow">
+                <div class="membercell purple bold left">Text Physician</div>
+                <div class="membercell purple"><img src="img/greencheck.png" class="small-img-redx"></div>
+                <div class="membercell purple"><img src="img/greencheck.png" class="small-img-redx"></div>
+                <div class="membercell purple"><img src="img/greencheck.png" class="small-img-redx"></div>
+                <div class="membercell purple right"><img src="img/redx.png" class="small-img-redx"></div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="memberrow">
+                <div class="membercell bold left">Virtual Visits</div>
+                <div class="membercell"><img src="img/greencheck.png" class="small-img-redx"></div>
+                <div class="membercell"><img src="img/greencheck.png" class="small-img-redx"></div>
+                <div class="membercell">$35 / visit</div>
+                <div class="membercell right"><img src="img/redx.png" class="small-img-redx"></div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="memberrow">
+                <div class="membercell purple bold left">Office Visits</div>
+                <div class="membercell purple"><img src="img/greencheck.png" class="small-img-redx"></div>
+                <div class="membercell purple"><img src="img/greencheck.png" class="small-img-redx"></div>
+                <div class="membercell purple">$175 / visit</div>
+                <div class="membercell purple right"><img src="img/redx.png" class="small-img-redx"></div>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="memberrow">
+                <div class="membercell bold left">Minor Procedures</div>
+                <div class="membercell"><img src="img/greencheck.png" class="small-img-redx"></div>
+                <div class="membercell"><img src="img/greencheck.png" class="small-img-redx"></div>
+                <div class="membercell"><img src="img/redx.png" class="small-img-redx"></div>
+                <div class="membercell right"><img src="img/redx.png" class="small-img-redx"></div>
+            </div>
+
+            <!-- Row 6 -->
+            <div class="memberrow">
+                <div class="membercell purple bold left bottom" style="border-bottom-left-radius: 10px;">Home Visits</div>
+                <div class="membercell purple bottom">$50 / visit</div>
+                <div class="membercell purple bottom">$50 / visit</div>
+                <div class="membercell purple bottom"><img src="img/redx.png" class="small-img-redx"></div>
+                <div class="membercell purple right bottom" style="border-bottom-right-radius: 10px;"><img src="img/redx.png" class="small-img-redx"></div>
+            </div>
+        </div>
+        
+
+        <!-- Emd Member Pricing Table -->
+
+        <br>
+        <br>
+
+
+
         <div class="row justify-content-center">
             <div class="container mt-5">
                 <div class="row justify-content-center">
