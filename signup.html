@@ -103,20 +103,6 @@
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About Us</a>
                     <a href="signup.html" class="nav-item nav-link">Sign Up</a>
-                    <!---- Comment Out Drop Down>
-                    <a href="appointment.html" class="nav-item nav-link">Make Appointment</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                            <a href="signup.html" class="dropdown-item">Facilities</a>
-                            <a href="team.html" class="dropdown-item">Doctors</a>
-                            <a href="call-to-action.html" class="dropdown-item">Prices</a>
-                            <a href="appointment.html" class="dropdown-item">Make Appointment</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Error</a>
-                        </div>
-                    </div>
-                    <-->
                     <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                 </div>
                 <a href="signup.html" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Sign Up Now<i class="fa fa-arrow-right ms-3"></i></a>
@@ -313,64 +299,28 @@
         </div>
         <!-- End Member Mobile Pricing Table -->
 
-
-        <!--
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1><i class="fa fa-star" aria-hidden="true"></i> Sign Up Now <i class="fa fa-star" aria-hidden="true"></i></h1>
-                    <p>For detailed info about each plan see <a href="services.html">services page.</a></p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s" onclick="redirectToAnnualMembershipSignUp()">
-                        <div class="facility-item">
-                            <div class="facility-text bg-primary">
-                                <h3 class="text-primary mb-3">Annual Commitment</h3>
-                                <p class="mb-0"><h2>$75/month</h2></p>
-                            </div>
-                        </div>
-                    </div>                
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s" onclick="redirectToMonthlySignUp()">
-                        <div class="facility-item">
-                            <div class="facility-text bg-success">
-                                <h3 class="text-success mb-3">Month-to-Month Membership</h3>
-                                <p class="mb-0"><h2>$85/month</h2></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s" onclick="redirectToNewPatientVisitLink()">
-                        <div class="facility-item">
-                            <div class="facility-text bg-warning">
-                                <h3 class="text-warning mb-3">One-Time New Patient</h3>
-                                <p class="mb-0"><h2>$300</h2></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s" onclick="redirectToReturnPatientVisitLink()">
-                        <div class="facility-item">
-                            <div class="facility-text bg-info">
-                                <h3 class="text-info mb-3">One-Time Returning Patient</h3>
-                                <p class="mb-0"><h2>$270</h2></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        -->
-        <!-- Sign Up Now End -->
-
-        <!-- Not Ready to Sign Up Section 
-        <div class="container mt-5 wow animate__animated animate__fadeInRight" data-wow-delay="0.5s" data-wow-duration="1s">
-            <div class="row">
-                <div class="col text-center">
-                    <h3>Not ready to sign up?</h3>
-                    <a href="https://schedule.nylas.com/direct-care-meet-and-greet" target="_blank" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Schedule a Free Meet & Greet</a>
-                    <br>
-                </div>
-            </div>
-        </div>
-        Not Ready to Sign Up Section End -->
+        <script>
+            // Function to toggle visibility of grids based on screen width
+            function toggleGrids() {
+                var screenWidth = window.innerWidth;
+                var desktopGrid = document.querySelector('.membergrid-desktop');
+                var mobileGrid = document.querySelector('.membergrid-mobile');
+        
+                if (screenWidth >= 769) {
+                    // Display desktop grid and hide mobile grid
+                    desktopGrid.style.display = 'block';
+                    mobileGrid.style.display = 'none';
+                } else {
+                    // Display mobile grid and hide desktop grid
+                    desktopGrid.style.display = 'none';
+                    mobileGrid.style.display = 'block';
+                }
+            }
+        
+            // Call the function initially and whenever the window is resized
+            toggleGrids(); // Call initially
+            window.addEventListener('resize', toggleGrids); // Call when window is resized
+        </script>
 
 
         <!-- Footer Start -->
@@ -398,35 +348,11 @@
                         <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
                         <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
                     </div>
-                    <!--<div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Photo Gallery</h3>
-                        <div class="row g-2 pt-2">
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-2.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-3.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-4.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-5.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>-->
+
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Mailing List</h3>
                         <p><a href="https://forms.gle/2z9FfSGfUHDZUQGw5" target="_">Sign up for our mailing list</a> to stay up-to-date on when we launch the practice.</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <!-- <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"> 
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"><a href="https://forms.gle/2z9FfSGfUHDZUQGw5" target="_">SignUp for Mailing List</a></button> -->
                         </div>
                     </div>
                 </div>
