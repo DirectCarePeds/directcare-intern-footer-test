@@ -273,9 +273,10 @@ h6,
 /*** Member Pricing Chart ***/
 .membergrid-desktop {
     display: grid;
+    align-items: center;
     grid-gap: 0px; /* spacing between rows */
     padding-right: 50px;
-    padding-left: 50px;
+    padding-left: 250px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -351,6 +352,8 @@ h6,
     font-family: "Font Awesome 5 Free";
     justify-content: center;
     align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .membercell-mobile.border {
@@ -364,6 +367,8 @@ h6,
     max-width: 300px;
     flex-grow: 1;
     margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 /* Define shake animation */
@@ -381,16 +386,37 @@ h6,
 }
 
 /* Hide mobile grid on desktop */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1350px) {
     .membergrid-mobile {
         display: none;
     }
 }
 
 /* Hide desktop grid on mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1349px) {
     .membergrid-desktop {
         display: none;
+    }
+}
+
+/* Full Membership Pricing Headings in 1 cell */
+.pricing-header {
+    margin-bottom: 20px;  /* Adds some spacing below the header */
+}
+
+.pricing-item {
+    flex: 1;  /* Ensures each item takes up equal space */
+    text-align: center;  /* Centers text horizontally */
+    margin: 0;  /* Adds some horizontal spacing between items */
+}
+
+@media screen and (max-width: 1350px) {
+    .pricing-items {
+        flex-direction: column;  /* Stacks items vertically on smaller screens */
+    }
+
+    .pricing-item {
+        margin: 5px 0;  /* Adds vertical spacing between items */
     }
 }
 
