@@ -521,19 +521,15 @@
         <!--Cookie Bot CMP Compliance -->
         <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="af1174e3-c830-42c9-9c56-effe2518ec0d" data-blockingmode="auto" type="text/javascript"></script>
 
-
+        <!-- Load the footer -->
         <div id="footer-placeholder"></div>
+        <script src="load-footer.js"></script>
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-    <!-- Fetch the footer contents from "footer.html" and add it to the page -->
-    <script>
-        fetch("footer.html").then(response => response.text()).then(data => {
-            document.getElementById("footer-placeholder").innerHTML = data;
-        })
-    </script>
+    
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
