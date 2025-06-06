@@ -726,3 +726,38 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+/* For the expandign items on the FAQ page */
+.accordion {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.question {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #eee;
+    font-weight: bold;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    transition: max-height 0.4s ease, padding 0.7s ease;
+    padding: 0 20px;
+}
+
+.answer.open {
+    max-height: 400px;
+    padding-top: 10px;
+}
+
+.question:hover {
+    background-color: #ddd;
+}
