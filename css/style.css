@@ -354,6 +354,7 @@ h6,
     align-items: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin-top: 2px
 }
 
 .membercell-mobile.border {
@@ -369,6 +370,7 @@ h6,
     margin: 0 auto;
     border: 1px solid black;
     border-radius: 10px;
+    padding-bottom: 10px
 }
 
 /* Define shake animation */
