@@ -84,7 +84,7 @@
     </script>
 </head>
 
-<body style="background-color: white;">
+<body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -98,6 +98,14 @@
         <!-- Load the Nav Bar -->
         <div id="nav-bar-placeholder"></div>
         <script src="load-nav-bar.js"></script>      
+
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div id="post-list" style="margin: 15px; margin: auto; max-width: 900px;">
+                    
+                </div>
+            </div>
+        </div>
         
         
         <!--Cookie Bot CMP Compliance -->
@@ -111,7 +119,43 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-    
+    <!-- Load the data from each blog post in the "blog-posts" folder -->
+    <script>
+        const postUrls = [
+            "blog-posts/blog-post-1.html",
+
+            // For testing
+            // "blog-posts/blog-post-1 copy.html",
+            // "blog-posts/blog-post-1 copy 2.html",
+            // "blog-posts/blog-post-1 copy 3.html",
+            // "blog-posts/blog-post-1 copy 4.html"
+            // Add more as they are created
+        ]
+
+        Promise.all(
+            postUrls.map(url =>
+                fetch(url)
+                    .then(res => res.text())
+                    .then(html => {
+                        const doc = new DOMParser().parseFromString(html, "text/html");
+                        const json = doc.getElementById("post-info")?.textContent;
+                        return json ? JSON.parse(json) : null;
+                    })
+            )
+        ).then(posts => {
+            posts.forEach(post => {
+                if (!post) return;
+                const div = document.createElement("div");
+                div.innerHTML = `
+                    <a href="${post.url}">
+                        <h2>${post.title}</h2>
+                        <p><strong>Date:</strong> ${post.date}</p>
+                        <p>${post.summary}</p>
+                    </a>`;
+                document.getElementById("post-list").appendChild(div);
+            })
+        })
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
