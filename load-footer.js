@@ -3,12 +3,8 @@
 //     document.getElementById("footer-placeholder").innerHTML = data;
 // })
 
-// Calculate how deep we are (number of folders between current page and root)
-const depth = location.pathname.split("/").length - 2;
-const prefix = "../".repeat(depth);
-
 // Adjust path to your actual file location
-fetch(`${prefix}footer.html`)
+fetch(`footer.html`)
   .then(response => response.text())
   .then(data => {
     document.getElementById("footer-placeholder").innerHTML = data;
