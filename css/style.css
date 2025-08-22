@@ -82,7 +82,9 @@ h4,
 .display-4,
 .display-5,
 .display-6 {
-    font-family: 'Lobster Two', cursive;
+    /* font-family: 'Lobster Two', cursive; */
+    /* font-family: 'Playfair Display'; */
+    font-family: 'Quicksand';
     font-weight: 700;
 }
 
@@ -94,7 +96,9 @@ h6,
 }
 
 .font-secondary {
-    font-family: 'Lobster Two', cursive;
+    /* font-family: 'Lobster Two', cursive; */
+    /* font-family: 'Playfair Display' */
+    font-family: 'Quicksand';
 }
 
 /*** Navbar Logo Image ***/
