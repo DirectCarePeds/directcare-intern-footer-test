@@ -95,6 +95,7 @@ h5,
 h6,
 .h5,
 .h6 {
+    font-family: 'Quicksand';
     font-weight: 600;
 }
 
@@ -361,7 +362,6 @@ h6,
     align-items: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    margin-top: 2px
 }
 
 .membercell-mobile.border {
@@ -758,12 +758,12 @@ h6,
     overflow: hidden;
     border-top: 1px solid #ccc;
     background-color: #fff;
-    transition: max-height 0.4s ease, padding 0.7s ease;
+    transition: max-height 0.5s ease, padding 0.5s ease;
     padding: 0 20px;
 }
 
 .answer.open {
-    max-height: 400px;
+    max-height: 140px;
     padding-top: 10px;
 }
 
