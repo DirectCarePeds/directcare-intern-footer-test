@@ -121,10 +121,10 @@
                     <div class="position-absolute top-0 start-0 w-100 h-50 d-flex align-items-center" style="background: rgba(0, 0, 0, 0);">
                         <div class="container">
                             <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
+                                <div class="col-10 col-lg-8" style="padding-left: 50px;">
                                     <h1 class="display-2 text-white animated slideInDown mb-4">Modern Pediatrics</h1>
                                     <p class="fs-5 fw-medium text-white mb-4 pb-2">Innovative Medicine: Direct, Integrated, and Personalized for the Whole Family.</p>
-                                    <a href="https://directcare.hint.com/booking?appointment-type=appty-5121a2ad381de07d" target="_blank" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Schedule a Free Meet & Greet</a>
+                                    <a href="https://directcare.hint.com/booking?appointment-type=appty-5121a2ad381de07d" target="_blank" class="btn btn-primary rounded-pill py-sm-2 px-sm-4 me-3 animated slideInLeft"><h4 style="color: white; padding-top: 5px;">Schedule a Free Meet & Greet</h4></a>
                                     <!--
                                     <a href="#section-to-skip-to" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Mission</a>
                                     -->        
@@ -138,10 +138,10 @@
                     <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
                         <div class="container">
                             <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
+                                <div class="col-10 col-lg-8" style="padding-left: 50px;">
                                     <h5 class="display-2 text-white animated slideInDown mb-4">Nurturing Smiles</h5>
                                     <p class="fs-5 fw-medium text-white mb-4 pb-2">We listen. We educate. We bring exceptional Primary Care Direct to You.</p>
-                                    <a href="about.html" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
+                                    <a href="about.html" class="btn btn-primary rounded-pill py-sm-2 px-sm-4 me-3 animated slideInLeft"><h4 style="color: white; padding-top: 5px;">Learn More</h4></a>
                                     <!--
                                     <a href="#section-to-skip-to" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Mission</a>
                                     -->
@@ -154,9 +154,50 @@
         </div>
         <!-- Carousel End -->
 
+        
+        <div class="container-xxl py-5">
+            <div class="container" style="max-width: 600px;">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="mb-3">Clinic & Home Visits</h1>
+                    <p>Where Care Comes to You! We mainly focus on providing primary care for children, and occasionally offer basic medical care for adults as a convenience and courtesy for parents with children. 
+                    </p>
+                </div>
+
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <a class="btn btn-primary rounded-pill py-sm-2 px-sm-4 me-3 animated slideInLeft" id="text-button"><h5 style="color: white; padding-top: 5px;">Text a Pediatrician</h5></a>
+                    <a href="signup.html" class="btn btn-primary rounded-pill py-sm-2 px-sm-4 me-3 animated slideInLeft"><h5 style="color: white; padding-top: 5px;">Sign Up Now</h5></a>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-primary">
+                                <i class="fa fa-bus-alt fa-3x text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-warning">
+                                <i class="fa fa-home fa-3x text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-info">
+                                <i class="fa fa-chalkboard-teacher fa-3x text-info"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
 
         <!-- Facilities Start -->
-        <div class="container-xxl py-5">
+        <!-- <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Clinic & Home Visits</h1>
@@ -218,7 +259,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Facilities End -->
 
         <!-- Membership Start -->
@@ -496,7 +537,20 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-    
+
+    <!-- Determine if device can make calls/texts and adjust button href accordingly -->
+    <script>
+        document.getElementById("text-button").addEventListener("click", function (){
+            const isPhone = /Mobi|Android|iPhone|iPod|iPad/.test(navigator.userAgent);
+
+            if (isPhone) {
+                window.location.href = "sms:+13854632757";
+            } else {
+                window.location.href = "textplan.html"
+            }
+        })
+    </script>
+
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
