@@ -2555,8 +2555,8 @@
   .btn-primary:hover {
     /* Old Orange Color fe7555, fe6d4b */
     color: #000;
-    background-color:  #084efe;
-    border-color:  #084efe;
+    background-color:  #FE4B08;
+    border-color:  #FE4B08;
   }
   .btn-check:focus + .btn-primary,
   .btn-primary:focus {
