@@ -106,6 +106,25 @@ h6,
     font-weight: 600;
 }
 
+h1.button,
+h2.button,
+h3.button,
+h4.button {
+    color: #f1f1f1; 
+    display: inline-block;
+    font-family: 'Quicksand';
+    font-weight: 700;
+}
+
+h5.button,
+h6.button {
+    color: #f1f1f1; 
+    display: inline-block;
+    font-family: 'Quicksand';
+    font-weight: 600;
+}
+
+
 .font-secondary {
     /* font-family: 'Lobster Two', cursive; */
     /* font-family: 'Playfair Display' */
@@ -530,7 +549,7 @@ h6,
 }
 
 .about-img img:hover {
-    background: var(--primary) !important;
+    background: var(--button) !important;
 }
 
 
