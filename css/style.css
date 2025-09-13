@@ -11,6 +11,9 @@
     --secondary: #fe0840;
     --text-dark: #222222;
     --text-light: #f1f1f1;
+    --button: #e53553;
+    --button-hover: #fe0840;
+    --orange-hover: #FE5D20;
 }
 
 .back-to-top {
@@ -141,7 +144,7 @@ h6,
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: #FE4B08;
+    color: #fe0840;
 }
 
 .navbar.sticky-top {
