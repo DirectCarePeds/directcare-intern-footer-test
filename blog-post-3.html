@@ -161,10 +161,10 @@
 
                     <p>Our home visits are <strong>simple and transparent</strong>:</p>
                     <ul>
-                        <li>$250 per home visit</li>
+                        <li><span data-price="full_home"></span> per home visit</li>
                         <li>No insurance required</li>
                         <li>No surprise bills</li>
-                        <li>Text-based pediatric plan available for just $20/month</li>
+                        <li>Text-based pediatric plan available for just <span data-price="text"></span>/month</li>
                     </ul>
 
                     <p>If you're a member (monthly or text-only), your messaging fee can apply toward a visit if one is needed.</p>
@@ -216,6 +216,18 @@
             "summary": "Imagine this: your toddler wakes up with a fever, you're juggling multiple kids at home, and the idea of dragging everyone into a clinic sounds... exhausting. What if instead, your pediatrician could come to you?",
             "url": "blog-post-3.html"
         }
+    </script>
+
+    <!-- Load prices -->
+    <script>
+        fetch('prices.json')
+        .then(res => res.json())
+        .then(prices => {
+            document.querySelectorAll('[data-price]').forEach(el => {
+            const key = el.dataset.price;
+            el.textContent = prices[key] ?? 'N/A';
+            });
+        });
     </script>
 
     <!-- JavaScript Libraries -->

@@ -131,9 +131,9 @@
 
                     <h2>Membership Options</h2>
                     <ul>
-                        <li><strong>Full Membership</strong>: $85/month (ages 2+), $105/month (ages 0–2)</li>
-                        <li><strong>Text-Only Plan</strong>: $20/month, pay per visit</li>
-                        <li><strong>All The Kids</strong>: $300/month</li>
+                        <li><strong>Full Membership</strong>: <span data-price="full_two_plus"></span>/month (ages 2+), <span data-price="full_zero_to_one"></span>/month (ages 0–2)</li>
+                        <li><strong>Text-Only Plan</strong>: <span data-price="text"></span>/month, pay per visit</li>
+                        <li><strong>All The Kids</strong>: <span data-price="all_kids"></span>/month</li>
                     </ul>
                     <p><a href="https://directcarepediatrics.com/signup.html" target="_blank">See full pricing</a></p>
 
@@ -177,6 +177,18 @@
             "summary": "Looking for a pediatrics practice in Sandy, Utah that offers more time, more access, and more personalized care? At Direct Care Pediatrics, we offer a modern alternative to traditional offices with our concierge-style model—designed to serve busy families who value relationships and flexibility.",
             "url": "blog-post-1.html"
         }
+    </script>
+
+    <!-- Load prices -->
+    <script>
+        fetch('prices.json')
+        .then(res => res.json())
+        .then(prices => {
+            document.querySelectorAll('[data-price]').forEach(el => {
+            const key = el.dataset.price;
+            el.textContent = prices[key] ?? 'N/A';
+            });
+        });
     </script>
 
     <!-- JavaScript Libraries -->

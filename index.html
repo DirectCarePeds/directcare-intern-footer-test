@@ -168,12 +168,12 @@
                                 <h4>👶 Full Membership</h4>
                                 <p>Unlimited <a href="services.html">clinic visits</a>, prescriptions, and orders.</p>
                                 <ul>
-                                    <li>Ages 0–2: $105/month per child</li>
-                                    <li>Ages 2+: $85/month per child</li>
-                                    <li>Home visits: $100 within service area</li>
+                                    <li>Ages 0–2: <span data-price="full_zero_to_one"></span>/month per child</li>
+                                    <li>Ages 2+: <span data-price="full_two_plus"></span>/month per child</li>
+                                    <li>Home visits: <span data-price="full_home"></span> within service area</li>
                                 </ul>
                                 <p>
-                                    <em>A $100 one-time family registration fee is due at sign-up. Memberships are month-to-month, cancel anytime.</em>
+                                    <em>A <span data-price="full_registration"></span> one-time family registration fee is due at sign-up. Memberships are month-to-month, cancel anytime.</em>
                                 </p>
 
                                 <a class="btn btn-primary py-3 px-5" style="max-width: fit-content;" href="https://directcare.hint.com/signup/full-membership/contacts?=">
@@ -186,14 +186,14 @@
                                     Unlimited <a href="textplan.html">text/email access</a> to a pediatrician for all the kids in the family. 
                                 </p>
                                 <ul>
-                                    <li>Family Plan: First month $40, then $20/month — cancel anytime</li>
+                                    <li>Family Plan: First month <span data-price="text_first_month"></span>, then <span data-price="text"></span>/month — cancel anytime</li>
                                 </ul>
 
                                 <h6>Text-Only Member Visit Costs</h6>
                                 <ul>
-                                    <li>Virtual visits: $50/consult*</li>
-                                    <li>Office visits: $175/visit</li>
-                                    <li>Home visits additional $100 within service area</li>
+                                    <li>Virtual visits: <span data-price="text_virtual"></span>/consult*</li>
+                                    <li>Office visits: <span data-price="text_office"></span>/visit</li>
+                                    <li>Home visits additional <span data-price="text_home"></span> within service area</li>
                                 </ul>
                                 <p>
                                     <em>*Prescription or lab & imaging orders are billed as a virtual visit.</em>
@@ -262,7 +262,7 @@
             <div class="container">
                 <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">See All the Kids in One Visit</h1>
-                    <p>Get unlimited primary care for all your kids for just $300/month. Perfect for families without insurance, those using health or cost shares, high-deductible plans, or anyone looking for affordable, reliable care.</p>
+                    <p>Get unlimited primary care for all your kids for just <span data-price="all_kids"></span>/month. Perfect for families without insurance, those using health or cost shares, high-deductible plans, or anyone looking for affordable, reliable care.</p>
                 </div>
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <a href="signup.html" class="btn btn-primary rounded-pill py-sm-2 px-sm-4 animated slideInLeft" style="margin-top: 20px;"><h4 class="button">Sign Up Now</h4></a>
@@ -362,6 +362,18 @@
             })
         })
         
+    </script>
+
+    <!-- Load prices -->
+    <script>
+        fetch('prices.json')
+        .then(res => res.json())
+        .then(prices => {
+            document.querySelectorAll('[data-price]').forEach(el => {
+            const key = el.dataset.price;
+            el.textContent = prices[key] ?? 'N/A';
+            });
+        });
     </script>
 
 

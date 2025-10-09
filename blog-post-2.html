@@ -109,13 +109,13 @@
             <div class="container">
                 <div style="margin: 15px; margin: auto; max-width: 900px;">
                     <!-- Blog post content -->
-                    <h2>Virtual Pediatric Care That Fits Real Life: Texting Your Doctor for $20/Month</h2>
+                    <h2>Virtual Pediatric Care That Fits Real Life: Texting Your Doctor for <span data-price="text"></span>/Month</h2>
 
                     <p>Let’s be honest—kids don’t get sick on a schedule. And sometimes, you don’t need a full clinic visit… you just need to <strong>text a doctor you trust</strong>.</p>
 
                     <p>That’s exactly what we offer at <strong>Direct Care Pediatrics</strong>.</p>
 
-                    <p>For just <strong>$20/month</strong>, families can text Dr. Dallin Hubbard directly for fast, thoughtful pediatric guidance—no app, no insurance games, no waiting room.</p>
+                    <p>For just <strong><span data-price="text"></span>/month</strong>, families can text Dr. Dallin Hubbard directly for fast, thoughtful pediatric guidance—no app, no insurance games, no waiting room.</p>
 
                     <hr>
 
@@ -126,9 +126,9 @@
                         <li><strong>Photos and videos welcome</strong>—send what you’re seeing, and we’ll guide you</li>
                         <li><strong>No surprise fees</strong>—just $20/month (billed monthly), and you only pay for visits when you need them:
                             <ul>
-                                <li>$50 virtual visit</li>
-                                <li>$175 office visit</li>
-                                <li>$250 home visit</li>
+                                <li><span data-price="text_virtual"></span> virtual visit</li>
+                                <li><span data-price="text_office"></span> office visit</li>
+                                <li><span data-price="text_home"></span> home visit</li>
                             </ul>
                         </li>
                     </ul>
@@ -188,7 +188,7 @@
                         </tr>
                         <tr>
                         <td>Monthly price</td>
-                        <td>$20</td>
+                        <td><span data-price="text"></span></td>
                         <td>$20</td>
                         <td>$20–$25 + kit fee</td>
                         </tr>
@@ -230,7 +230,7 @@
                     <hr>
 
                     <h3>Ready to Try It?</h3>
-                    <p>You can sign up today for just $20/month—no contracts, no hidden fees, just peace of mind.</p>
+                    <p>You can sign up today for just <span data-price="text"></span>/month—no contracts, no hidden fees, just peace of mind.</p>
 
                     <p>👉 <a href="https://directcarepediatrics.com/contact.html" target="_blank">Contact us here</a><br>
                     📱 Or text/call: <a href="sms:3854632757">(385) 463-2757</a><br>
@@ -261,6 +261,18 @@
             "summary": "Lets be honest—kids dont get sick on a schedule. And sometimes, you dont need a full clinic visit… you just need to text a doctor you trust. Thats exactly what we offer at Direct Care Pediatrics. For just $20/month, families can text Dr. Dallin Hubbard directly for fast, thoughtful pediatric guidance—no app, no insurance games, no waiting room.",
             "url": "blog-post-2.html"
         }
+    </script>
+
+    <!-- Load prices -->
+    <script>
+        fetch('prices.json')
+        .then(res => res.json())
+        .then(prices => {
+            document.querySelectorAll('[data-price]').forEach(el => {
+            const key = el.dataset.price;
+            el.textContent = prices[key] ?? 'N/A';
+            });
+        });
     </script>
 
     <!-- JavaScript Libraries -->

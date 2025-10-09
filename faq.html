@@ -158,7 +158,7 @@
                         <h4>My family is pretty healthy and doesn't need to go to the doctor often. Should I still sign up?</h4>
                     </div>
                     <div class="answer">
-                        <p>Yes! Our text-only plan is great for families who have questions here and there but don't need to visit a doctor very often. We can help you have peace of mind about the little things, and it's only $20 a month for the whole family.</p>
+                        <p>Yes! Our text-only plan is great for families who have questions here and there but don't need to visit a doctor very often. We can help you have peace of mind about the little things, and it's only <span data-price="text"></span> a month for the whole family.</p>
                     </div>
                 </div>
 
@@ -247,6 +247,17 @@
         }
     </script>
 
+    <!-- Load prices -->
+    <script>
+        fetch('prices.json')
+        .then(res => res.json())
+        .then(prices => {
+            document.querySelectorAll('[data-price]').forEach(el => {
+            const key = el.dataset.price;
+            el.textContent = prices[key] ?? 'N/A';
+            });
+        });
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
