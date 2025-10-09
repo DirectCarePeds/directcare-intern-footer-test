@@ -818,16 +818,9 @@ h6.button {
 }
 
 .answer.open {
-    max-height: 140px;
     padding-top: 10px;
 }
 
-@media (max-width: 768px) {
-  .answer.open {  
-    max-height: 325px;
-    padding-top: 10px;
-  }
-}
 
 .question:hover {
     background-color: #ddd;

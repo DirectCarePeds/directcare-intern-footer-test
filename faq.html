@@ -238,11 +238,18 @@
         function toggleFAQ(question) {
             const content = question.nextElementSibling;
             const isOpen = content.classList.contains('open');
+            
+            // Adjust how long each item takes to open
+            const height = content.scrollHeight;
+            const duration = Math.min(0.002 * height + 0.2, 1.2);
+            content.style.transition = `max-height ${duration}s ease, padding ${duration}s ease`;
 
             if (isOpen) {
+                content.style.maxHeight = null;
                 content.classList.remove('open');
             } else {
                 content.classList.add('open');
+                content.style.maxHeight = height + "px"; // Dynamically set height of the answer to fit content
             }
         }
     </script>
