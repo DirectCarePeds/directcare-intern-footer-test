@@ -1,0 +1,16 @@
+{
+    "full_zero_to_one": "$105",
+    "full_two_plus": "$85",
+    "full_registration": "$100",
+    "full_home": "$100",
+    "text": "$20",
+    "text_registration": "$20",
+    "text_first_month": "$40",
+    "text_virtual": "$50",
+    "text_office": "$175",
+    "text_home": "$275",
+    "text_home_diagnostic": "$65",
+    "all_kids": "$300",
+    "all_kids_home": "$100",
+    "travel": "$50"
+}

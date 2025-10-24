@@ -33,8 +33,6 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- Other head elements (title, meta charset, etc.) go here -->
-
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Direct Care Pediatrics">
     <meta property="og:description" content="Direct Primary Care in Utah">
@@ -109,15 +107,6 @@
         <div class="container-xxl py-5 page-header position-relative mb-5">
             <div class="container py-5">
                 <h1 class="display-2 text-white animated slideInDown mb-4">Member Services</h1>
-                <!--
-                <nav aria-label="breadcrumb animated slideInDown">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">Become A Member</li>
-                    </ol>
-                </nav>
-                -->
             </div>
         </div>
         <!-- Page Header End -->
@@ -167,7 +156,7 @@
                 <div class="col-md-3 mb-3">
                     <div class="grid-cell text-center">
                         <h3><i class="fa fa-mobile me-4"></i><br>Telemedicine & Home Visits</h3>
-                        <p>Video, text, email your doctor with ease. Travel fee* is $50 per home visit. <br><small>*Currently waived within in the service area</small></p>
+                        <p>Video, text, email your doctor with ease. Travel fee* is <span data-price="travel"></span> per home visit. <br><small>*Currently waived within in the service area</small></p>
                     </div>
                 </div>
             </div>
@@ -190,36 +179,45 @@
                     <div class="col-lg-5 wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
                         <div class="membership-box">
                             <h2 style="text-align: center;"><i class="fa fa-calendar" aria-hidden="true"></i> Full Membership </h2>
-                            <p>This plan includes our full primary care services listed above. A $100 registration fee* per family is taken at sign-up.</p>
-                                <ul>
-                                    <li>Ages 0 - 2: $105/month </li>
-                                    <li>Ages 2+: $85/month </li>
-                                    <li>Family Plan: $300/month** </li>
-                                </ul>
-                            <p>While our clinic undergoes remodeling, we exclusively offer in-home and virtual visits, and all travel fees ($50) are waived for those who sign up for our membership within our service area. Enjoy quality pediatric care and the flexibility to cancel anytime.</p>
-                            <p><small>*If the plan is ever canceled or payment is lapsed, the re-registration fee is $100 per person.</small></p>
-                            <p><small>**Family Plan consist of all the children under age 26 for the parent(s) in one household.</small></p>
-                            <div class="btn-center">
-                                <a class="btn btn-primary py-3 px-5" href="https://directcare.hint.com/signup/full-membership" target="_blank"><h4  style="color: white;">Join Now<br>Full Membership</h4></a>
-                            </div>
+                            <p>Unlimited <a href="services.html">clinic visits</a>, prescriptions, and orders.</p>
+                            <ul>
+                                <li>Ages 0–2: <span data-price="full_zero_to_one"></span>/month per child</li>
+                                <li>Ages 2+: <span data-price="full_two_plus"></span>/month per child</li>
+                                <li>Home visits: <span data-price="full_home"></span> within service area</li>
+                            </ul>
+                            <p>
+                                <em>A <span data-price="full_registration"></span> one-time family registration fee is due at sign-up. Memberships are month-to-month, cancel anytime.</em>
+                            </p>
+
+                            <a class="btn btn-primary py-3 px-5" style="display: block; margin: 0 auto; max-width: fit-content;" href="https://directcare.hint.com/signup/full-membership/contacts?=">
+                                <h5 class="button">Full Membership Sign Up</h5><i class="fa fa-arrow-right ms-2"></i>
+                            </a>
                         </div>
                     </div>
                     <!-- Second membership box -->
                     <div class="col-lg-5 wow animate__animated animate__fadeInRight" data-wow-delay="0.5s">
                         <div class="membership-box">
                             <h2 style="text-align: center;"><i class="fa fa-building" aria-hidden="true"></i> Text Only Plan </h2>
-                            <p>Get <a href="textplan.html">unlimited text/email</a> to physician & discounts on visits/procedures. A $20 registration fee is taken at sign-up.</p>
-                                <ul>
-                                    <li>Family Plan: $20/month**</li>
-                                    <li>Virtual Visits: $50/consult</li>
-                                    <li>Office Visits: $175/visit</li>
-                                </ul>
-                            <p>While our clinic undergoes remodeling, we exclusively offer in-home and virual visits, and all travel fees ($50) are waived for those who sign up for our membership within our service area. Enjoy quality pediatric care and the flexibility to cancel anytime.</p>
-                            <p><small>*If the plan is ever canceled or payment is lapsed, the re-registration fee is recollected.</small></p>
-                            <p><small>**Family Plan consist of all the children under age 26 for the parent(s) in one household.</small></p>
-                            <div class="btn-center">
-                                <a class="btn btn-primary py-3 px-5 text-white" href="https://directcare.hint.com/signup/text-only-plan" target="_blank"><h4 style="color: white;">Join Now<br>Text Only</h4></a>
-                            </div>
+                            <p>
+                                Unlimited <a href="textplan.html">text/email access</a> to a pediatrician for all the kids in the family. 
+                            </p>
+                            <ul>
+                                <li>Family Plan: First month <span data-price="text_first_month"></span>, then <span data-price="text"></span>/month — cancel anytime</li>
+                            </ul>
+
+                            <h6>Text-Only Member Visit Costs</h6>
+                            <ul>
+                                <li>Virtual visits: <span data-price="text_virtual"></span>/consult*</li>
+                                <li>Office visits: <span data-price="text_office"></span>/visit</li>
+                                <li>Home visits additional <span data-price="text_home"></span> within service area</li>
+                            </ul>
+                            <p>
+                                <em>*Prescription or lab & imaging orders are billed as a virtual visit.</em>
+                            </p>
+
+                            <a class="btn btn-primary py-3 px-5" style="display: block; margin: 0 auto; max-width: fit-content;" href="https://directcare.hint.com/signup/text-only-plan">
+                                <h5 class="button">Text Member Sign Up</h5><i class="fa fa-arrow-right ms-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -259,129 +257,26 @@
         </div>
         <!--What's Not Included End-->
 
-        <!-- Separator Line Between Member and Non-Member Services -->
+        <!-- Separator Line Between Member and All Kids Services -->
         <hr class="my-6">
 
-        <!-- Non-Member Services Start -->
+        <!-- All Kids Services Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Non-Member Fees</h1>
-                    <p>For non-members, enjoy on-demand primary care at $300 per patient per doctor's visit without a subscription commitment. Discounts are available to uninsured, healthshares, high-deductible plan holders, and financially needy.</p>
+                    <h1 class="mb-3">All Kids Fees</h1>
+                    <p>For all kids, enjoy on-demand primary care at <span data-price="all_kids"></span> per month. Discounts are available to uninsured, healthshares, high-deductible plan holders, and financially needy.</p>
                 </div>
                 <div class="text-center wow fadeInUp" data-wow-delay="0.2s"> <!-- Added wow class and data-wow-delay -->
-                    <img class="img-fluid rounded" style="max-width: 300px; display: block; margin: 0 auto;" src="img/classes-3.jpg" alt="">
+                    <img class="img-fluid rounded" 
+                        style="max-width: 300px; display: block; margin: 0 auto;" 
+                        src="img/child-playing-family-care.jpg"
+                        alt="Affordable, reliable pediatric care for all children in one family plan"
+                    >
                 </div>
             </div>
         </div>    
-        <!-- Non-Member Services End -->
-
-        <!-- Appointment Start -->
-        <!--
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="bg-light rounded">
-                    <div class="row g-0">
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <h1 class="mb-4">Make Appointment</h1>
-                                <form>
-                                    <div class="row g-3">
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="gname" placeholder="Gurdian Name">
-                                                <label for="gname">Gurdian Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="gmail" placeholder="Gurdian Email">
-                                                <label for="gmail">Gurdian Email</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cname" placeholder="Child Name">
-                                                <label for="cname">Child Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cage" placeholder="Child Age">
-                                                <label for="cage">Child Age</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                                <label for="message">Message</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                            <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="img/appointment.jpg" style="object-fit: cover;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        -->
-        <!-- Appointment End -->
-
-
-        <!-- Testimonial Start 
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">What Families Say about Direct Care!</h1>
-                    <p>Patients value direct primary care for its personalized, convenient approach to primary care.</p>
-                </div>
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="testimonial-item bg-light rounded p-5">
-                        <p class="fs-5">The doctor is so great with kids! We had a little accident where one of my kids needed stitches. The doctor came over to our place and took care of it easily. It was SO MUCH BETTER than going to immediate Care. Faster. Cheaper. Absolutely the way to go!</p>
-                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
-                            <div class="ps-3">
-                                <h3 class="mb-1">Aubrey</h3>
-                                <span></span>
-                            </div>
-                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded p-5">
-                        <p class="fs-5">The straightforward pricing and absence of insurance complexities make quality healthcare not just accessible but affordable. It's a refreshing departure from the traditional insurance model.</p>
-                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 90px; height: 90px;">
-                            <div class="ps-3">
-                                <h3 class="mb-1">Self-Employed Dad</h3>
-                                <span></span>
-                            </div>
-                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded p-5">
-                        <p class="fs-5">Having our pediatrician come to us directly, even after hours, provides incredible convenience for a single working father.</p>
-                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 90px; height: 90px;">
-                            <div class="ps-3">
-                                <h3 class="mb-1">Single Dad</h3>
-                                <span></span>
-                            </div>
-                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        Testimonial End -->
+        <!-- All Kids Services End -->
 
         <!--Cookie Bot CMP Compliance -->
         <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="af1174e3-c830-42c9-9c56-effe2518ec0d" data-blockingmode="auto" type="text/javascript"></script>
@@ -395,6 +290,18 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
+
+    <!-- Load prices -->
+    <script>
+        fetch('prices.json')
+        .then(res => res.json())
+        .then(prices => {
+            document.querySelectorAll('[data-price]').forEach(el => {
+            const key = el.dataset.price;
+            el.textContent = prices[key] ?? 'N/A';
+            });
+        });
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

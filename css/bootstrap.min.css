@@ -80,8 +80,7 @@
   .h5,
   h6,
   .h6 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin: 5px 0px;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     line-height: 1.2;
@@ -203,12 +202,12 @@
     top: -0.5em;
   }
   a {
-    color: #fe0840;
+    color: #e53553;
     text-decoration: none;
   }
   a:hover {
     /* Old Orange Color: #cb4a2c*/
-    color: #ff7f50;
+    color: #fe0840;
   }
   a:not([href]):not([class]),
   a:not([href]):not([class]):hover {
@@ -2550,20 +2549,22 @@
   }
   .btn-primary {
     color: #000;
-    background-color: #fe0840;
-    border-color: #fe0840;
+    background-color: #e53553;
+    border-color: #e53553;
+    transition: box-shadow 0.01s ease-in-out, border-width 0.01s ease-in-out;
   }
   .btn-primary:hover {
     /* Old Orange Color fe7555, fe6d4b */
     color: #000;
-    background-color:  #084efe;
-    border-color:  #084efe;
+    background-color:  #fe0840;
+    border-color:  #cdcdcd;
+    box-shadow: 0 0 10px 2px #cdcdcd;
   }
   .btn-check:focus + .btn-primary,
   .btn-primary:focus {
     color: #000;
-    background-color:  #084efe;
-    border-color:  #084efe;
+    background-color:  #fe0840;
+    border-color:  #fe0840;
     box-shadow: 0 0 0 0.25rem rgba(216, 79, 47, 0.5);
   }
   .btn-check:checked + .btn-primary,
@@ -2572,8 +2573,8 @@
   .btn-primary.active,
   .show > .btn-primary.dropdown-toggle {
     color: #000;
-    background-color:  #084efe;
-    border-color:  #084efe;
+    background-color:  #fe0840;
+    border-color:  #fe0840;
   }
   .btn-check:checked + .btn-primary:focus,
   .btn-check:active + .btn-primary:focus,

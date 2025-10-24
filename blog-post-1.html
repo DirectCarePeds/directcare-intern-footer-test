@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>Blog</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <!-- Meta tags for SEO -->
+    <meta name="title" content="Concierge Pediatrics in Sandy, Utah – Personalized Direct Care">
+    <meta name="description" content="Explore how Direct Care Pediatrics in Sandy, Utah offers concierge-style pediatric care with longer visits, home visits, and direct access to your pediatrician.">
+    <meta name="keywords" content="concierge pediatrics Sandy Utah, pediatrics practice Sandy Utah, direct care pediatrics, home visit pediatrician Utah, modern pediatrician Sandy UT, direct primary care pediatrics">
 
     <!-- Favicon -->
     <link rel="icon" href="/img/FalconTransparent.png" type="image/png">
@@ -21,14 +22,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="../lib/animate/animate.min.css" rel="stylesheet">
-    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Other head elements (title, meta charset, etc.) go here -->
 
@@ -96,9 +97,9 @@
 
         <!-- Load the Nav Bar -->
         <div id="nav-bar-placeholder"></div>
-        <script src="../load-nav-bar.js"></script>  
-        
-        <!-- CONTENT HERE -->
+        <script src="load-nav-bar.js"></script>  
+
+
         <!-- Content Start -->
         <div class="container-xxl py-5">
             <div class="container">
@@ -113,29 +114,28 @@
                     <h2>Meet Your Pediatrician</h2>
                     <p><strong>Dr. Dallin Hubbard, MD, PhD</strong>, leads Direct Care Pediatrics in Sandy, UT. He’s trained in both general pediatrics and neonatal care, and he offers:</p>
                     <ul>
-                    <li>Same-day appointments</li>
-                    <li>Home visits and virtual care</li>
-                    <li>Direct text and phone communication—even after hours</li>
+                        <li>Same-day appointments</li>
+                        <li>Home visits and virtual care</li>
+                        <li>Direct text and phone communication—even after hours</li>
                     </ul>
                     <p><a href="https://maps.app.goo.gl/Vk8K9AZRtHdBt3EN7" target="_blank">1434 E 9400 S, Suite 100, Sandy, UT 84093</a></p>
 
                     <h2>How We Compare</h2>
                     <p>Unlike traditional clinics such as <a href="https://intermountainhealthcare.org/locations/alta-view-clinic/pediatrics" target="_blank">Alta View Clinic Pediatrics</a>, we offer:</p>
                     <ul>
-                    <li>30–60 minute visits (vs. 10–15 min)</li>
-                    <li>Direct communication with your pediatrician</li>
-                    <li>No surprise billing—just transparent monthly or per-visit pricing</li>
-                    <li>One dedicated doctor who knows your child</li>
+                        <li>30–60 minute visits (vs. 10–15 min)</li>
+                        <li>Direct communication with your pediatrician</li>
+                        <li>No surprise billing—just transparent monthly or per-visit pricing</li>
+                        <li>One dedicated doctor who knows your child</li>
                     </ul>
 
                     <h2>Membership Options</h2>
                     <ul>
-                    <li><strong>Full Membership</strong>: $85/month (ages 2+), $105/month (ages 0–2)</li>
-                    <li><strong>Family Plan</strong>: $300/month</li>
-                    <li><strong>Text-Only Plan</strong>: $20/month, pay per visit</li>
-                    <li><strong>Non-Members</strong>: $300 per visit (no subscription required)</li>
+                        <li><strong>Full Membership</strong>: <span data-price="full_two_plus"></span>/month (ages 2+), <span data-price="full_zero_to_one"></span>/month (ages 0–2)</li>
+                        <li><strong>Text-Only Plan</strong>: <span data-price="text"></span>/month, pay per visit</li>
+                        <li><strong>All The Kids</strong>: <span data-price="all_kids"></span>/month</li>
                     </ul>
-                    <p><a href="https://directcarepediatrics.com/contact.html" target="_blank">See full pricing</a></p>
+                    <p><a href="https://directcarepediatrics.com/signup.html" target="_blank">See full pricing</a></p>
 
                     <h2>Real Parent Feedback</h2>
                     <blockquote>“Dr. Hubbard came to our house for stitches. It was faster, cheaper, and my child felt calm the whole time.” —Aubrey</blockquote>
@@ -146,9 +146,9 @@
                     <p>If you’re tired of rushed appointments and hard-to-reach doctors, come see what concierge-style pediatric care can feel like. We’re here to make parenting easier and healthcare more accessible.</p>
 
                     <ul>
-                    <li><a href="https://directcarepediatrics.com/contact.html" target="_blank">Schedule a free meet-and-greet</a></li>
-                    <li><a href="mailto:info@directcarepediatrics.com">Email us</a></li>
-                    <li><a href="tel:3854632757">(385) 463-2757</a></li>
+                        <li><a href="https://directcarepediatrics.com/contact.html" target="_blank">Schedule a free meet-and-greet</a></li>
+                        <li><a href="mailto:info@directcarepediatrics.com">Email us</a></li>
+                        <li><a href="sms:3854632757">(385) 463-2757</a></li>
                     </ul>
 
                     <p><strong>Direct Care Pediatrics</strong>: Concierge care, local heart, and a doctor who texts you back.</p>
@@ -163,24 +163,44 @@
 
         <!-- Load the footer -->
         <div id="footer-placeholder"></div>
-        <script src="../load-footer.js"></script>
+        <script src="load-footer.js"></script>
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-    
+    <!-- Post information -->
+    <script type="application/json" id="post-info">
+        {
+            "title": "Concierge Pediatrics in Sandy, Utah: Why More Families Are Choosing Direct Care",
+            "date": "8/11/2025",
+            "summary": "Looking for a pediatrics practice in Sandy, Utah that offers more time, more access, and more personalized care? At Direct Care Pediatrics, we offer a modern alternative to traditional offices with our concierge-style model—designed to serve busy families who value relationships and flexibility.",
+            "url": "blog-post-1.html"
+        }
+    </script>
+
+    <!-- Load prices -->
+    <script>
+        fetch('prices.json')
+        .then(res => res.json())
+        .then(prices => {
+            document.querySelectorAll('[data-price]').forEach(el => {
+            const key = el.dataset.price;
+            el.textContent = prices[key] ?? 'N/A';
+            });
+        });
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../lib/wow/wow.min.js"></script>
-    <script src="../lib/easing/easing.min.js"></script>
-    <script src="../lib/waypoints/waypoints.min.js"></script>
-    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

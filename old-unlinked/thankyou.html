@@ -24,6 +24,9 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+    <!-- Add Animate.css for services.html Page-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -45,8 +48,8 @@
     <meta name="twitter:description" content="Direct Primary Care in Utah">
     <meta name="twitter:image" content="img\thumbnail.JPG">
 
-    <!-- Other meta tags, CSS files, or external scripts -->
-    <script>
+     <!-- Other meta tags, CSS files, or external scripts -->
+     <script>
         function redirectToNewPatientVisitLink() {
             // Specify the URL you want to redirect to
             var redirectUrl = "https://directcare.hint.com/booking?appointment-type=appty-0eb8d158adc8e448";
@@ -73,6 +76,25 @@
             window.open(redirectUrl, "_blank");
         }
     </script>
+    <script>
+        function redirectToAnnualMembershipSignUp() {
+            // Specify the URL you want to redirect to
+            var redirectUrl = "https://directcare.hint.com/signup/text-only-plan";
+
+            // Open the URL in a new tab
+            window.open(redirectUrl, "_blank");
+        }
+    </script>
+    <script>
+        function redirectToMonthlySignUp() {
+            // Specify the URL you want to redirect to
+            var redirectUrl = "https://directcare.hint.com/signup/full-membership";
+
+            // Open the URL in a new tab
+            window.open(redirectUrl, "_blank");
+        }
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8P02GLCR0W"></script>
     <script>
@@ -82,9 +104,10 @@
 
     gtag('config', 'G-8P02GLCR0W');
     </script>
-</head>
 
-<body style="background-color: white;">
+    </head>
+
+<body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -105,27 +128,56 @@
         <div class="container-xxl py-5 page-header position-relative mb-5">
             <div class="container py-5">
                 <!---->
-                <h1 class="display-2 text-white animated slideInDown mb-4"></h1>
+                <h1 class="display-2 text-white animated slideInDown mb-4">THANK YOU!</h1>
             </div>
         </div>
         <!-- Page Header End -->
 
-        <!-- Zion Affiliate Start -->
-        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <h1><i class="fa fa-star" aria-hidden="true"></i> Zion Healthshare Affiliate <i class="fa fa-star" aria-hidden="true"></i></h1>
-            <p>We are an official Zion Healthshare distributor and affiliate #18345. We partner with Zion, to provide education and help people sign up for their healthshare. We provide this service to everyone and not just families with kids! </p>
-            <a href="https://zionhealthshare.org/?affiliate=18345" class="btn btn-primary rounded-pill" target="_blank">Zion Healthshare Sign Up Link</a>
-        </div>
 
-        <!-- Zion Affiliate End -->
+        <!-- Sign Up Now Start -->
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1><i class="fa fa-star" aria-hidden="true"></i> Thank you <i class="fa fa-star" aria-hidden="true"></i></h1>
+            <br>
+            <h2>You are now a Member of <br> Direct Care Pediatrics!</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <!-- First membership box -->
+                    <div class="col-lg-5 wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
+                        <div class="membership-box">
+                            <h2 style="text-align: center;"><i class="fa fa-heartbeat" aria-hidden="true"></i> Contact Us for an Appointment</h2>
+                            <br>
+                            <div class="btn-center d-flex justify-content-center gap-3 mt-3 flex-wrap">
+                                <a class="btn btn-primary py-3 px-5 text-white" href="sms:+13854632757" target="_blank"><h4  style="color: white;"> Text Us </h4></a>
+                                <a class="btn btn-primary py-3 px-5 text-white" href="mailto:appointments@directcarepediatrics.com" target="_blank"><h4 style="color: white;"> Email Us </h4></a>
+                                <a class="btn btn-primary py-3 px-5 text-white" href="sms:+13854632757" target="_blank"><h4 style="color: white;"> Call Us </h4></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <!-- Not Ready to Sign Up Section -->
+        <div class="container mt-5 wow animate__animated animate__fadeInRight" data-wow-delay="0.5s" data-wow-duration="1s">
+            <div class="row">
+                <div class="col text-center">
+                    <h3>We are here for you!</h3>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <!-- Not Ready to Sign Up Section End -->
 
         <!--Cookie Bot CMP Compliance -->
         <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="af1174e3-c830-42c9-9c56-effe2518ec0d" data-blockingmode="auto" type="text/javascript"></script>
 
-
         <!-- Load the footer -->
         <div id="footer-placeholder"></div>
         <script src="load-footer.js"></script>
+
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>

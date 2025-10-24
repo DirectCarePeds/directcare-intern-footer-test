@@ -1,9 +1,19 @@
+/* Import the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 /********** Template CSS **********/
 :root {
     /*Old Color Orange #fe5d37*/
     --primary: #fe0840;
     --light: #fff5f3;
     --dark: #103741;
+    --primary-blue: #0961AA;
+    --secondary: #fe0840;
+    --text-dark: #222222;
+    --text-light: #f1f1f1;
+    --button: #e53553;
+    --button-hover: #fe0840;
+    --orange-hover: #FE5D20;
 }
 
 .back-to-top {
@@ -82,7 +92,9 @@ h4,
 .display-4,
 .display-5,
 .display-6 {
-    font-family: 'Lobster Two', cursive;
+    /* font-family: 'Lobster Two', cursive; */
+    /* font-family: 'Playfair Display'; */
+    font-family: 'Quicksand';
     font-weight: 700;
 }
 
@@ -90,11 +102,33 @@ h5,
 h6,
 .h5,
 .h6 {
+    font-family: 'Quicksand';
     font-weight: 600;
 }
 
+h1.button,
+h2.button,
+h3.button,
+h4.button {
+    color: #f1f1f1; 
+    display: inline-block;
+    font-family: 'Quicksand';
+    font-weight: 700;
+}
+
+h5.button,
+h6.button {
+    color: #f1f1f1; 
+    display: inline-block;
+    font-family: 'Quicksand';
+    font-weight: 600;
+}
+
+
 .font-secondary {
-    font-family: 'Lobster Two', cursive;
+    /* font-family: 'Lobster Two', cursive; */
+    /* font-family: 'Playfair Display' */
+    font-family: 'Quicksand';
 }
 
 /*** Navbar Logo Image ***/
@@ -129,7 +163,7 @@ h6,
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: #084efe;
+    color: #fe0840;
 }
 
 .navbar.sticky-top {
@@ -262,7 +296,7 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/large-family-pediatric-care.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -290,7 +324,7 @@ h6,
 }
 
 .membercell {
-    padding: 5px;
+    padding: 3px;
     display: flex;
     font-family: "Font Awesome 5 Free";
     justify-content: center;
@@ -354,7 +388,6 @@ h6,
     align-items: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    margin-top: 2px
 }
 
 .membercell-mobile.border {
@@ -516,7 +549,7 @@ h6,
 }
 
 .about-img img:hover {
-    background: var(--primary) !important;
+    background: var(--button) !important;
 }
 
 
@@ -729,7 +762,36 @@ h6,
     border-right: none;
 }
 
-/* For the expandign items on the FAQ page */
+/* Text plan styles */
+.content {
+  display: flex;
+  margin: auto;
+}
+
+.card {
+    width: 350px; 
+    padding: 20px; 
+    margin: 15px; 
+    align-self: flex-start; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .card {
+        order: -1;
+        max-width: 100%;
+        margin: 10px auto
+    }
+}
+
+/* For the expanding items on the FAQ page */
 .accordion {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -751,15 +813,58 @@ h6,
     overflow: hidden;
     border-top: 1px solid #ccc;
     background-color: #fff;
-    transition: max-height 0.4s ease, padding 0.7s ease;
+    transition: max-height 0.5s ease, padding 0.5s ease;
     padding: 0 20px;
 }
 
 .answer.open {
-    max-height: 400px;
     padding-top: 10px;
 }
 
+
 .question:hover {
     background-color: #ddd;
+}
+
+
+/* Styles for the main blog page */
+.post-link {
+    border-radius: 15px;
+    padding: 15px 20px 5px;
+    transition: background-color 0.3s ease;
+}
+
+.post-link h2{
+    transition: color 0.3s ease;
+}
+
+.post-link p{
+    color: #74787c;
+    transition: color 0.3s ease;
+}
+
+.post-link:hover {
+    background-color: #eeeeee;
+}
+
+.post-link:hover h2 {
+    color: var(--primary);
+}
+
+.post-link:hover p{
+    color: #000000;
+}
+
+.text-content {
+    padding-left: 20px; 
+    margin: auto; 
+    max-width: 750px;
+}
+
+@media (max-width: 768px) {
+    .text-content {
+        padding-left: 0px;
+        margin: auto; 
+        max-width: 750px;
+    }
 }

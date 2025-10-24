@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Blog</title>
+    <title>Pediatrics Practice in Sandy, Utah</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -29,8 +29,6 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- Other head elements (title, meta charset, etc.) go here -->
 
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Direct Care Pediatrics">
@@ -84,7 +82,7 @@
     </script>
 </head>
 
-<body>
+<body style="background-color: white;">
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -95,21 +93,33 @@
         <!-- Spinner End -->
 
 
-        <!-- Load the Nav Bar -->
+        <!-- Nav Bar Start-->
         <div id="nav-bar-placeholder"></div>
-        <script src="load-nav-bar.js"></script>      
+        <script src="load-nav-bar.js"></script>
+        <!-- Nav Bar End-->
 
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div id="post-list" style="margin: 15px; margin: auto; max-width: 900px;">
-                    
-                </div>
+
+        <!-- Page Header End -->
+        <div class="container-xxl py-5 page-header position-relative mb-5">
+            <div class="container py-5">
+                <!---->
+                <h1 class="display-2 text-white animated slideInDown mb-4"></h1>
             </div>
         </div>
-        
-        
+        <!-- Page Header End -->
+
+        <!-- Zion Affiliate Start -->
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1><i class="fa fa-star" aria-hidden="true"></i> Zion Healthshare Affiliate <i class="fa fa-star" aria-hidden="true"></i></h1>
+            <p>We are an official Zion Healthshare distributor and affiliate #18345. We partner with Zion, to provide education and help people sign up for their healthshare. We provide this service to everyone and not just families with kids! </p>
+            <a href="https://zionhealthshare.org/?affiliate=18345" class="btn btn-primary rounded-pill" target="_blank">Zion Healthshare Sign Up Link</a>
+        </div>
+
+        <!-- Zion Affiliate End -->
+
         <!--Cookie Bot CMP Compliance -->
         <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="af1174e3-c830-42c9-9c56-effe2518ec0d" data-blockingmode="auto" type="text/javascript"></script>
+
 
         <!-- Load the footer -->
         <div id="footer-placeholder"></div>
@@ -119,43 +129,10 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-    <!-- Load the data from each blog post in the "blog-posts" folder -->
-    <script>
-        const postUrls = [
-            "blog-post-1.html",
-            "blog-post-2.html",
-            "blog-post-3.html",
-            // Add more as they are created
-        ]
-
-        Promise.all(
-            postUrls.map(url =>
-                fetch(url)
-                    .then(res => res.text())
-                    .then(html => {
-                        const doc = new DOMParser().parseFromString(html, "text/html");
-                        const json = doc.getElementById("post-info")?.textContent;
-                        return json ? JSON.parse(json) : null;
-                    })
-            )
-        ).then(posts => {
-            posts.forEach(post => {
-                if (!post) return;
-                const div = document.createElement("div");
-                div.innerHTML = `
-                    <a href="${post.url}">
-                    <div class="post-link">
-                        <h2>${post.title}</h2>
-                        <p><strong>Date:</strong> ${post.date}</p>
-                        <p>${post.summary}</p>
-                    </div>
-                    </a>`;
-                document.getElementById("post-list").appendChild(div);
-            })
-        })
-    </script>
-
     <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
@@ -163,22 +140,14 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
+    <!-- Add Wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
 
 </html>
-
-
-<!-- Creating a new blog post instructions 
-1. Create a copy of the file "blog-template.html"
-    1.b. Rename this file to whatever you want
-2. Replace the comment that says "CONTENT HERE" with the blog content
-3. Replace the meta tags with the new tags for SEO under the comment "Replace these with meta tags for SEO"
-4. Fill in the information under "Post information" including the following
-    - title
-    - date
-    - summary
-    - url 
-5. Add the url (it should be the same url as in step 4) to the list at line 124
--->
