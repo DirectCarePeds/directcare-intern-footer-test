@@ -905,3 +905,20 @@ h6.button {
     }
 }
 
+.testimonial-carousel .owl-stage,
+.testimonial-carousel .owl-stage-outer {
+  display: flex !important;
+}
+
+.testimonial-carousel .owl-item {
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+/* Force each testimonial card to fill height */
+.testimonial-item {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
