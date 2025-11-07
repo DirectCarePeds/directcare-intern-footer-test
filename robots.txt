@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /old-unlinked/
 
-Sitemap: https://github.com/DirectCarePeds/directcare-intern-footer-test/sitemap.xml
+Sitemap: /sitemap.xml
