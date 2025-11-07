@@ -152,11 +152,38 @@
                         </div>
                     </div>
                 </div>
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h6>Still have questions about our text plan? Sign up for a meet and greet or text a doctor right now.</h6>
+                    <a href="https://directcare.hint.com/booking?appointment-type=appty-5121a2ad381de07d" 
+                        class="btn btn-primary rounded-pill py-sm-2 px-sm-4 animated slideInLeft text-button" 
+                        style="margin-top: 20px;">
+                        <h4 class="button">Schedule a Meet & Greet</h4>
+                    </a>
+                    <a 
+                        class="btn btn-primary rounded-pill py-sm-2 px-sm-4 animated slideInLeft text-button" 
+                        style="margin-top: 20px;">
+                        <h4 class="button"> Text a Doctor Now</h4>
+                    </a>
+                </div>
             </div>
         </div>
         <!-- Content end -->
 
+        <!-- Determine if device can make calls/texts and adjust button href accordingly -->
+        <script>
+            document.querySelectorAll(".text-button").forEach(btn => {
+                btn.addEventListener("click", function (){
+                    const isPhone = /Mobi|Android|iPhone|iPod|iPad/.test(navigator.userAgent);
 
+                    if (isPhone) {
+                        window.location.href = "sms:+13854626880";
+                    } else {
+                        window.location.href = "textplan.html"
+                    }
+                })
+            })
+            
+        </script>
 
         <!--Cookie Bot CMP Compliance -->
         <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="af1174e3-c830-42c9-9c56-effe2518ec0d" data-blockingmode="auto" type="text/javascript"></script>
