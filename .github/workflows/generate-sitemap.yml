@@ -18,7 +18,7 @@ jobs:
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: "https://DirectCarePeds.github.io/directcare-intern-footer-test"
-          include-html: "index.html"
+          include-html: "*.html"
 
       - name: Commit and push sitemap
         run: |
