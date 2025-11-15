@@ -213,7 +213,7 @@ h6.button {
 
 .navbar .nav-item .dropdown-menu.show {
     opacity: 1;
-    max-height: 76px;
+    max-height: 112px;
     visibility: visible;
     transform: translateY(0);
 }
