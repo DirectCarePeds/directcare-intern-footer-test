@@ -19,6 +19,8 @@ jobs:
         with:
           path-to-root: "."
           base-url-path: "https://DirectCarePeds.github.io/directcare-intern-footer-test"
+          include-html-extension: false
+          strip-index-html: true
 
       - name: Commit and push sitemap
         run: |
