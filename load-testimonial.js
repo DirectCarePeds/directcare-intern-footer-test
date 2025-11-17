@@ -1,5 +1,5 @@
 // Adjust path to your actual file location
-fetch(`testimonial.html`)
+fetch(`/testimonial.html`)
   .then(response => response.text())
   .then(data => {
     document.getElementById("testimonial-placeholder").innerHTML = data;
