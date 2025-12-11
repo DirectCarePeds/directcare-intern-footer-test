@@ -849,9 +849,24 @@ h6.button {
 
 /* Styles for the main blog page */
 .post-link {
+    display: flex;
+    align-items: stretch; /* makes image same height as content */
+    justify-content: space-between;
+    gap: 15px;
     border-radius: 15px;
-    padding: 15px 20px 5px;
+    padding: 15px 20px 15px;
     transition: background-color 0.3s ease;
+}
+
+.post-content {
+    flex: 1;
+}
+
+.post-link img {
+    width: 250px;
+    height: auto;
+    object-fit: cover; /* keeps aspect ratio */
+    border-radius: 10px;
 }
 
 .post-link h2{
