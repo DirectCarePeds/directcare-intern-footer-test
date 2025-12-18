@@ -137,10 +137,11 @@
 
                             <h4>Visit Costs (if needed):</h4>
                             <ul>
-                                <li>Virtual Visits: <span data-price="text_virtual"></span>/consult</li>
-                                <li>Office Visits: <span data-price="text_office"></span>/visit</li>
-                                <li>Home Visits: <span data-price="text_home"></span>/visit</li>
-                                <li>At-Home Diagnostics: starting at <span data-price="text_home_diagnostic"></span>/visit</li>
+                                <li>Virtual Visits: $50/consult*</li>
+                                <li>Office Visits: $175/visit</li>
+                                <li>Home Visits: $275/visit</li>
+                                <li>At-Home Diagnostics: starting at $65/visit</li>
+                                <li>Dental Cleaning & Xrays: $150/visit</li>
                             </ul>
                         </div>
 
@@ -219,16 +220,13 @@
         <div id="footer-placeholder"></div>
         <script src="/load-footer.js"></script>
 
-        <!-- Load the chat -->
-        <script src="https://widgets.leadconnectorhq.com/loader.js"
-            data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-            data-widget-id="6836725cb8f8b54477ea101d">
-        </script>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
     <!-- Load prices -->
     <script>
-        fetch('/prices.json')
+        fetch('prices.json')
         .then(res => res.json())
         .then(prices => {
             document.querySelectorAll('[data-price]').forEach(el => {
