@@ -890,6 +890,19 @@ h6.button {
     color: #000000;
 }
 
+@media (max-width: 768px) {
+    .post-link {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .post-image {
+        width: 100%;
+        max-width: 400px; /* optional */
+    }
+}
+
 
 
 @media (max-width: 992px) {
@@ -937,3 +950,4 @@ h6.button {
   flex-direction: column;
   justify-content: space-between;
 }
+
