@@ -296,7 +296,7 @@
 
     <!-- Load prices -->
     <script>
-        fetch('prices.json')
+        fetch('/prices.json')
         .then(res => res.json())
         .then(prices => {
             document.querySelectorAll('[data-price]').forEach(el => {
